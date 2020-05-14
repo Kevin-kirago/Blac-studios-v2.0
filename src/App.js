@@ -26,7 +26,6 @@ class App extends Component {
 			case "/contact":
 				document.title = "Contact | Blac Studios";
 				return;
-
 			default:
 				document.title = "Work | Blac Studios";
 				return;
