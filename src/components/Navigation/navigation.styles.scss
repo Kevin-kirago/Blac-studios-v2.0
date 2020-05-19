@@ -8,7 +8,20 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	z-index: 20;
+	z-index: 2;
+
+	&__overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 50%;
+		backdrop-filter: blur(1rem);
+		background: rgba(0, 0, 0, 0.5);
+		transform: translateX(-100%);
+		backface-visibility: hidden;
+		z-index: -1;
+	}
 
 	&__logo {
 		position: relative;
@@ -25,5 +38,26 @@
 
 	&__menu {
 		cursor: pointer;
+	}
+
+	&__list {
+		position: relative;
+		list-style: none;
+
+		display: grid;
+		grid-row-gap: 1rem;
+		padding: 0 1rem;
+		backface-visibility: hidden;
+	}
+
+	&__item {
+		font-size: 4rem;
+		font-weight: 900;
+
+		&--link {
+			text-transform: uppercase;
+			text-decoration: none;
+			color: #ffc300;
+		}
 	}
 }

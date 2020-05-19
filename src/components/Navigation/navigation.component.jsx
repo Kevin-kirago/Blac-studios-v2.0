@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import NavigationDrawer from "../Navigation-drawer/nav-drawer.component";
 
 import NavMenu from "../../assets/bx-menu.svg";
 import logo from "../../assets/logo.png";
@@ -13,8 +14,8 @@ class Navigation extends React.Component {
 		};
 	}
 
-	handleClick = (e) => {
-		console.log(e.target);
+	handleClick = () => {
+		this.setState({ isOpen: !this.state.isOpen });
 	};
 
 	render() {
@@ -26,6 +27,7 @@ class Navigation extends React.Component {
 				<div className="navigation__menu" onClick={this.handleClick}>
 					<img src={NavMenu} alt="nav-menu" />
 				</div>
+				<NavigationDrawer isOpen={this.state.isOpen} handleClick={this.handleClick} />
 			</div>
 		);
 	}
