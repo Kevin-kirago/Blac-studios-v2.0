@@ -16,10 +16,10 @@ const HomePage = () => {
 
 	const params = {
 		direction: "vertical",
-		// autoplay: {
-		// 	delay: 10000,
-		// 	disableOnInteraction: false,
-		// },
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
 		loop: true,
 		pagination: {
 			el: ".swiper-pagination",

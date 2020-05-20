@@ -6,7 +6,7 @@ const Slide = ({ imageUrl, index }) => {
 		<>
 			<div className="slide__preview">
 				<img src={imageUrl} alt={`slide-${index}`} />
-				<div className="slide__preview--details"></div>
+				{/* <div className="slide__preview--details"></div> */}
 			</div>
 		</>
 	);

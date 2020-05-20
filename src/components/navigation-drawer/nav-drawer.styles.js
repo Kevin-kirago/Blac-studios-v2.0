@@ -1,4 +1,19 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
+const navOpen = css`
+	transform: translateX(0);
+`;
+const navClosed = css`
+	transform: translateX(100%);
+`;
+
+const getNavStatus = ({ isOpen }) => {
+	if (isOpen) {
+		return navOpen;
+	} else {
+		return navClosed;
+	}
+};
 
 export const Drawer = styled.div`
 	position: fixed;
@@ -9,7 +24,6 @@ export const Drawer = styled.div`
 	background-color: #000;
 	z-index: 5;
 	padding: 0 4rem;
-	transform: translateX(100%);
 
 	display: grid;
 	align-content: center;
@@ -26,7 +40,8 @@ export const Drawer = styled.div`
 
 		img {
 			cursor: pointer;
-			opacity: 0;
 		}
 	}
+
+	${getNavStatus}
 `;
