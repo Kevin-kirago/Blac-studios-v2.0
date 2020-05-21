@@ -9,8 +9,8 @@ import whiskey_img1 from "../../assets/products/whiskey.png";
 import iria_img1 from "../../assets/products/iria.png";
 import iria_img2 from "../../assets/products/Iria_fresh_milk01.png";
 
-export default {
-	toycar: {
+export default [
+	{
 		id: 0,
 		routeName: "work/toycar",
 		title: "ToyCar",
@@ -18,7 +18,7 @@ export default {
 		reel: null,
 		gallery: [toycar_img1, toycar_img2],
 	},
-	black: {
+	{
 		id: 1,
 		routeName: "work/black",
 		title: "Black",
@@ -26,7 +26,7 @@ export default {
 		reel: "link",
 		gallery: [black_img1],
 	},
-	valon: {
+	{
 		id: 2,
 		routeName: "work/valon",
 		title: "Valon Product shot",
@@ -34,7 +34,7 @@ export default {
 		reel: null,
 		gallery: [valon_img1, valon_img2],
 	},
-	smirnoff: {
+	{
 		id: 3,
 		routeName: "work/smirnoff",
 		title: "Smirnoff",
@@ -42,7 +42,7 @@ export default {
 		reel: null,
 		gallery: [smirnoff_img1, smirnoff_img2],
 	},
-	whiskey: {
+	{
 		id: 4,
 		routeName: "work/whiskey",
 		title: "Whiskey",
@@ -50,7 +50,7 @@ export default {
 		reel: null,
 		gallery: [whiskey_img1],
 	},
-	fresh_iria: {
+	{
 		id: 5,
 		routeName: "work/fresh-iria",
 		title: "Fresh Iria Milk",
@@ -58,4 +58,4 @@ export default {
 		reel: "link",
 		gallery: [iria_img1, iria_img2],
 	},
-};
+];

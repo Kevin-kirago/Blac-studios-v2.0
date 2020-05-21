@@ -1,0 +1,20 @@
+.project__item {
+	display: grid;
+	grid-template-rows: 1fr 5rem;
+
+	&-footer {
+		display: grid;
+	}
+}
+.text {
+	&__bold {
+		color: #555;
+		font-size: 1.8rem;
+		font-weight: 700;
+	}
+
+	&__light {
+		color: #fff;
+		font-size: 1.3rem;
+	}
+}

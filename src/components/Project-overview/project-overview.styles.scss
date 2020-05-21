@@ -1,0 +1,14 @@
+.projectOverview {
+	position: relative;
+	width: 136.8rem;
+	margin: 0 auto;
+	height: 55rem;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+
+	& > * {
+		border: 1px solid #fff;
+	}
+}

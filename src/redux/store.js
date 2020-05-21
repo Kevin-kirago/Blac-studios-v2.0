@@ -1,12 +1,12 @@
 import { createStore, applyMiddleware, compose } from "redux";
-// import { logger } from "redux-logger";
+import { logger } from "redux-logger";
 import rootReducer from "./root-reducer";
 
 const middlewares = [];
 
 // while in development log activities or actions
 if (process.env.NODE_ENV === "development") {
-	// middlewares.push(logger);
+	middlewares.push(logger);
 }
 
 const composeEnhancers =
