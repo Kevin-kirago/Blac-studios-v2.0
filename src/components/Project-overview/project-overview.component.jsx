@@ -1,22 +1,13 @@
 import React from "react";
-import { connect } from "react-redux";
-import { createStructuredSelector } from "reselect";
-import { selectGalleryData } from "../../redux/gallery/gallery.selectors";
-import ProjectItem from "../Project-item/project-item.component";
-import "./project-overview.styles.scss";
 
-const ProjectOverview = ({ data }) => {
+const ProjectOverview = () => {
 	return (
-		<div className="projectOverview">
-			{data.map((item) => (
-				<ProjectItem key={item.id} item={item} />
-			))}
-		</div>
+		<>
+			<div className="work__title">
+				<span>Explore our Archives</span>
+			</div>
+		</>
 	);
 };
 
-const mapStateToProps = createStructuredSelector({
-	data: selectGalleryData,
-});
-
-export default connect(mapStateToProps)(ProjectOverview);
+export default ProjectOverview;
