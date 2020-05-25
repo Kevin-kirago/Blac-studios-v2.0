@@ -1,13 +1,19 @@
 import React from "react";
+import { connect } from "react-redux";
+import { selectGalleryItem } from "../../redux/gallery/gallery.selectors";
 
-const ProjectOverview = () => {
+const ProjectOverview = ({ projectItem: { title } }) => {
 	return (
 		<>
 			<div className="work__title">
-				<span>Explore our Archives</span>
+				<span>{title}</span>
 			</div>
 		</>
 	);
 };
 
-export default ProjectOverview;
+const mapStateToProps = (state, { match }) => ({
+	projectItem: selectGalleryItem(match.url)(state),
+});
+
+export default connect(mapStateToProps)(ProjectOverview);

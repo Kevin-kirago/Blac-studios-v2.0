@@ -1,0 +1,63 @@
+.footer {
+	position: relative;
+
+	&__description {
+		position: relative;
+		height: 10rem;
+		width: 100%;
+		background-color: rgb(30, 30, 30);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&--text {
+			font-size: 1.3rem;
+			color: #fff;
+			letter-spacing: 0.15rem;
+		}
+	}
+
+	&__nav {
+		position: relative;
+		height: 5rem;
+		padding: 0 4rem;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&--header {
+			font-size: 1.2rem;
+			color: #222;
+		}
+
+		&--list {
+			display: flex;
+			list-style: none;
+
+			&-item {
+				font-size: 1.8rem;
+
+				&:not(:last-child) {
+					margin-right: 1.5rem;
+				}
+
+				a {
+					&:link,
+					&:visited {
+						text-decoration: none;
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer__social-icon {
+	display: inline-block;
+	height: 1.8rem;
+	width: 1.8rem;
+	fill: #ffc300;
+}
