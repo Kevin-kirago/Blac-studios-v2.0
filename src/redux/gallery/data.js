@@ -34,7 +34,7 @@ export default [
 		routeName: "work/black",
 		title: "Black",
 		thumbnail: black_img1,
-		reel: "link",
+		reel: "https://player.vimeo.com/video/222206537?color=ffc300&title=0&byline=0&portrait=0",
 		gallery: [black_img1],
 	},
 	{
@@ -57,7 +57,7 @@ export default [
 		id: 4,
 
 		routeName: "work/smirnoff",
-		title: "Smirnoff",
+		title: "Smirnoff Apple Green",
 		thumbnail: smirnoff_img1,
 		reel: null,
 		gallery: [smirnoff_img1, smirnoff_img2],
@@ -67,7 +67,7 @@ export default [
 		routeName: "work/fresh-iria",
 		title: "Fresh Iria Milk",
 		thumbnail: iria_img1,
-		reel: "link",
+		reel: "https://player.vimeo.com/video/339977229?color=ffc300&title=0&byline=0&portrait=0",
 		gallery: [iria_img1, iria_img2],
 	},
 	{
@@ -97,7 +97,7 @@ export default [
 	{
 		id: 9,
 		routeName: "work/coca-cola",
-		title: "Coca cola",
+		title: "Coca cola bottle",
 		thumbnail: coca_cola_img1,
 		reel: null,
 		gallery: [coca_cola_img1, coca_cola_img2],

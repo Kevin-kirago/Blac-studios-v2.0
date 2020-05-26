@@ -1,67 +1,28 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectModal } from "../../redux/modal/modal.selector";
+import { toggleModal } from "../../redux/modal/modal.action";
+import { VideoModal } from "./modal.styles";
 
-const isModalOpen = css`
-	visibility: visible;
-	opacity: 1;
-`;
-
-const isModalClosed = css`
-	visibility: hidden;
-	opacity: 0;
-`;
-
-const modalstatus = ({ visible }) => {
-	if (visible) {
-		return isModalOpen;
-	} else {
-		return isModalClosed;
-	}
-};
-
-const VideoModal = styled.div`
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 100vw;
-	background: rgba(0, 0, 0, 0.95);
-	overflow: hidden;
-	transition: all 0.3s ease;
-	z-index: 10;
-
-	${modalstatus}
-
-	.modal__content {
-		position: relative;
-		display: grid;
-		align-content: center;
-		justify-items: center;
-		height: 100%;
-		width: 100%;
-
-		&-video {
-			position: relative;
-			height: 60rem;
-			width: 80rem;
-		}
-	}
-`;
-
-const Modal = () => {
+const Modal = ({ modalStatus: { isModalOpen, currentProjectvideo }, toggleModalStatus }) => {
 	return (
-		<VideoModal>
+		<VideoModal visible={isModalOpen} onClick={() => toggleModalStatus(null)}>
 			<div className="modal__content">
 				<div className="modal__content-video">
-					<iframe
-						src="https://player.vimeo.com/video/339977229?color=ffc300&title=0&byline=0&portrait=0"
-						frameBorder="0"
-						width="100%"
-						height="100%"></iframe>
+					<iframe title="Reel" src={currentProjectvideo} frameBorder="0" width="100%" height="100%"></iframe>
 				</div>
 			</div>
 		</VideoModal>
 	);
 };
 
-export default Modal;
+const mapStateToProps = createStructuredSelector({
+	modalStatus: selectModal,
+});
+
+const mapDispatchStateToProps = (dispatchEvent) => ({
+	toggleModalStatus: (reel) => dispatchEvent(toggleModal(reel)),
+});
+
+export default connect(mapStateToProps, mapDispatchStateToProps)(Modal);
