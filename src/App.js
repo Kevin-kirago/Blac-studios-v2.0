@@ -14,10 +14,10 @@ import ContactPage from "./pages/Contact/contact.component";
 const App = (props) => {
 	switch (props.location.pathname) {
 		case "/":
-			document.title = "Home | Blac Studios";
+			document.title = "Blac Studios |";
 			break;
 		case "/work":
-			document.title = "Work | Blac Studios";
+			document.title = "Blac Studios | work";
 			break;
 		case "/about":
 			document.title = "About | Blac Studios";
