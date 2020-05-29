@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import NavigationDrawer from "../Navigation-drawer/nav-drawer.component";
+import NavigationDrawer from "../Navbar-drawer/nav-drawer.component";
 
 import NavMenu from "../../assets/bx-menu.svg";
 import logo from "../../assets/logo.png";
