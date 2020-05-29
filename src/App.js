@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route, withRouter } from "react-router-dom";
 
 // component
-import Navigation from "./components/Navigation/navigation.component";
+import Navigation from "./components/Navbar/navigation.component";
 import Footer from "./components/Footer/footer.component";
 
 // pages
