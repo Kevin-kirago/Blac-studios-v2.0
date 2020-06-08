@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import removeBtn from "../../assets/bx-x.svg";
 import { Drawer } from "./nav-drawer.styles";
+import removeBtn from "../../assets/bx-x.svg";
 
 const NavigationDrawer = ({ isOpen, handleClick }) => {
 	return (

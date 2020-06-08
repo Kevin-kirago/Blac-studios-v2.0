@@ -19,7 +19,7 @@ const ProjectOverview = ({ projectItem: { title, gallery } }) => {
 			<div className="work__content">
 				<Swiper {...params}>
 					{gallery.map((img) => (
-						<div className="work__content-img">
+						<div className="work__content-img" key={gallery.indexOf(img)}>
 							<img src={img} alt={`project-${title}`} />
 						</div>
 					))}

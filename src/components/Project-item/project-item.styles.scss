@@ -37,7 +37,7 @@
 
 		&__holder {
 			display: grid;
-			grid-template-columns: auto 2rem;
+			grid-template-columns: auto 2.5rem;
 			align-content: center;
 			grid-column-gap: 1rem;
 			justify-items: end;
@@ -45,8 +45,8 @@
 
 			svg {
 				display: inline-block;
-				height: 1.8rem;
-				width: 1.8rem;
+				height: 2.3rem;
+				width: 2.3rem;
 				fill: #bbb;
 			}
 

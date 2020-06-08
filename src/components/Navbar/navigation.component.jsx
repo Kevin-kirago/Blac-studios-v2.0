@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import NavigationDrawer from "../Navbar-drawer/nav-drawer.component";
 
@@ -6,31 +6,25 @@ import NavMenu from "../../assets/bx-menu.svg";
 import logo from "../../assets/logo.png";
 import "./navigation.styles.scss";
 
-class Navigation extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			isOpen: false,
-		};
-	}
+const Navigation = () => {
+	const [navStatus, setNavStatus] = useState({ isOpen: false });
+	const { isOpen } = navStatus;
 
-	handleClick = () => {
-		this.setState({ isOpen: !this.state.isOpen });
+	const handleClick = () => {
+		setNavStatus({ isOpen: !isOpen });
 	};
 
-	render() {
-		return (
-			<div className="navigation">
-				<Link to="/" className="navigation__logo">
-					<img src={logo} alt="nav-logo" />
-				</Link>
-				<div className="navigation__menu" onClick={this.handleClick}>
-					<img src={NavMenu} alt="nav-menu" />
-				</div>
-				<NavigationDrawer isOpen={this.state.isOpen} handleClick={this.handleClick} />
+	return (
+		<div className="navigation">
+			<Link to="/" className="navigation__logo">
+				<img src={logo} alt="nav-logo" />
+			</Link>
+			<div className="navigation__menu" onClick={handleClick}>
+				<img src={NavMenu} alt="nav-menu" />
 			</div>
-		);
-	}
-}
+			<NavigationDrawer isOpen={isOpen} handleClick={handleClick} />
+		</div>
+	);
+};
 
 export default Navigation;

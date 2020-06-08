@@ -55,7 +55,6 @@ export default [
 	},
 	{
 		id: 4,
-
 		routeName: "work/smirnoff",
 		title: "Smirnoff Apple Green",
 		thumbnail: smirnoff_img1,

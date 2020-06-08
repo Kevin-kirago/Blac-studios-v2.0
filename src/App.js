@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, withRouter } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 // component
 import Navigation from "./components/Navbar/navigation.component";
@@ -11,25 +11,7 @@ import WorkPage from "./pages/Work/work.component";
 import AboutPage from "./pages/About/about.component";
 import ContactPage from "./pages/Contact/contact.component";
 
-const App = (props) => {
-	switch (props.location.pathname) {
-		case "/":
-			document.title = "Blac Studios |";
-			break;
-		case "/work":
-			document.title = "Blac Studios | work";
-			break;
-		case "/about":
-			document.title = "About | Blac Studios";
-			break;
-		case "/contact":
-			document.title = "Contact | Blac Studios";
-			break;
-		default:
-			document.title = "Work | Blac Studios";
-			break;
-	}
-
+const App = () => {
 	return (
 		<>
 			<Navigation />
@@ -44,4 +26,4 @@ const App = (props) => {
 	);
 };
 
-export default withRouter(App);
+export default App;
