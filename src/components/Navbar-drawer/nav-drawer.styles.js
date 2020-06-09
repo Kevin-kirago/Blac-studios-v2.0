@@ -1,19 +1,4 @@
-import styled, { css } from "styled-components";
-
-const navOpen = css`
-	transform: translateX(0);
-`;
-const navClosed = css`
-	transform: translateX(100%);
-`;
-
-const getNavStatus = ({ isOpen }) => {
-	if (isOpen) {
-		return navOpen;
-	} else {
-		return navClosed;
-	}
-};
+import styled from "styled-components";
 
 export const Drawer = styled.div`
 	position: fixed;
@@ -27,7 +12,7 @@ export const Drawer = styled.div`
 
 	display: grid;
 	align-content: center;
-	transition: transform 0.4s ease;
+	transform: translateX(100%);
 
 	.closeBtn {
 		position: absolute;
@@ -40,8 +25,7 @@ export const Drawer = styled.div`
 
 		img {
 			cursor: pointer;
+			opacity: 0;
 		}
 	}
-
-	${getNavStatus}
 `;

@@ -7,11 +7,15 @@ import logo from "../../assets/logo.png";
 import "./navigation.styles.scss";
 
 const Navigation = () => {
-	const [navStatus, setNavStatus] = useState({ isOpen: false });
+	const [navStatus, setNavStatus] = useState({ isOpen: null });
 	const { isOpen } = navStatus;
 
 	const handleClick = () => {
-		setNavStatus({ isOpen: !isOpen });
+		if (isOpen === null) {
+			setNavStatus({ isOpen: true });
+		} else {
+			setNavStatus({ isOpen: !isOpen });
+		}
 	};
 
 	return (
