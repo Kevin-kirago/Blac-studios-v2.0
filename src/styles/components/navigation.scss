@@ -51,9 +51,8 @@
 	&__list {
 		position: relative;
 		list-style: none;
+		align-self: center;
 
-		display: grid;
-		grid-row-gap: 1rem;
 		padding: 0 1rem;
 		backface-visibility: hidden;
 	}

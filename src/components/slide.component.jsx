@@ -1,5 +1,4 @@
 import React from "react";
-import "./slide.styles.scss";
 
 const Slide = ({ imageUrl, index }) => {
 	return (

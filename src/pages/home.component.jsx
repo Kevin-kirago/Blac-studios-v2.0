@@ -1,15 +1,13 @@
 import React from "react";
 import Swiper from "react-id-swiper";
-import Slide from "../../components/slide/slide.component";
-
+import Slide from "../components/slide.component";
 import "swiper/css/swiper.css";
-import "./home.styles.scss";
 
 // images
-import iria from "../../assets/products/iria.png";
-import toyCar from "../../assets/products/toyCar.jpg";
-import black from "../../assets/products/black.png";
-import whiskey from "../../assets/products/whiskey.png";
+import iria from "../assets/products/iria.png";
+import toyCar from "../assets/products/toyCar.jpg";
+import black from "../assets/products/black.png";
+import whiskey from "../assets/products/whiskey.png";
 
 const HomePage = () => {
 	const data = [toyCar, black, iria, whiskey];

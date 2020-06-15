@@ -1,8 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import { selectGalleryItem } from "../../redux/gallery/gallery.selectors";
+import { selectGalleryItem } from "../redux/gallery/gallery.selectors";
 import Swiper from "react-id-swiper";
-import "./project-overview.styles.scss";
 
 const ProjectOverview = ({ projectItem: { title, gallery } }) => {
 	const params = {

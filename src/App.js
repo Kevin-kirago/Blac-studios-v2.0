@@ -4,7 +4,7 @@ import Routes from "./routes/routes";
 
 // component
 import Navigation from "./components/Navbar/navigation.component";
-import Footer from "./components/Footer/footer.component";
+import Footer from "./components/footer.component";
 
 const App = () => {
 	const routeComponents = Routes.map(({ path, component, exact }, key) => {

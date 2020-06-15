@@ -11,21 +11,23 @@ export const Drawer = styled.div`
 	padding: 0 4rem;
 
 	display: grid;
-	align-content: center;
+	grid-template-rows: 10rem 1fr 10rem;
 	transform: translateX(100%);
 
 	.closeBtn {
-		position: absolute;
-		top: 0;
-		right: 4rem;
-		height: 10rem;
-
 		display: flex;
 		align-items: center;
+		justify-content: flex-end;
 
 		img {
 			cursor: pointer;
 			opacity: 0;
 		}
+	}
+
+	.nav__drawer--footer {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
 	}
 `;

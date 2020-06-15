@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import NavigationDrawer from "../Navbar-drawer/nav-drawer.component";
+import NavigationDrawer from "./nav-drawer.component";
 
 import NavMenu from "../../assets/bx-menu.svg";
 import logo from "../../assets/logo.png";
-import "./navigation.styles.scss";
 
 const Navigation = () => {
 	const [navStatus, setNavStatus] = useState({ isOpen: null });

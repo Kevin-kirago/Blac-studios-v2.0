@@ -1,9 +1,8 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import Modal from "../../components/Modal/modal.component";
-import ProjectCollections from "../../components/Project-collections/project-collections.component";
-import ProjectOverview from "../../components/Project-overview/project-overview.component";
-import "./work.styles.scss";
+import Modal from "../components/Modal/modal.component";
+import ProjectCollections from "../components/project-collections.component";
+import ProjectOverview from "../components/project-overview.component";
 
 const WorkPage = ({ match }) => {
 	return (

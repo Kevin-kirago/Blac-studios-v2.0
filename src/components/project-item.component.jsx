@@ -1,8 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import { toggleModal } from "../../redux/modal/modal.action";
-import sprites from "../../assets/sprite.svg";
-import "./project-item.styles.scss";
+import { toggleModal } from "../redux/modal/modal.action";
+import sprites from "../assets/sprite.svg";
 
 const ProjectItem = (props) => {
 	const {

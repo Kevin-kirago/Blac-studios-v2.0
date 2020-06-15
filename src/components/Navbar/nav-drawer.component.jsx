@@ -1,12 +1,10 @@
 import React, { useState, useEffect, useRef, createRef } from "react";
-import { TimelineMax, Power3, CSSPlugin, gsap } from "gsap/all";
+import { TimelineMax, Power3 } from "gsap/all";
 
 import { NavLink } from "react-router-dom";
 import { Drawer } from "./nav-drawer.styles";
 import removeBtn from "../../assets/bx-x.svg";
 import Routes from "../../routes/routes";
-
-gsap.registerPlugin(CSSPlugin);
 
 const NavigationDrawer = ({ isOpen, handleClick }) => {
 	const [timeLine, setTimeLine] = useState(new TimelineMax());
@@ -51,6 +49,9 @@ const NavigationDrawer = ({ isOpen, handleClick }) => {
 						</li>
 					))}
 				</ul>
+				<div className="nav__drawer--footer">
+					<span className="footer__nav--header">All Works @Blac Studios {new Date().getFullYear()}</span>
+				</div>
 			</Drawer>
 		</>
 	);

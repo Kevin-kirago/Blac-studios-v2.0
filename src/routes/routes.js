@@ -1,7 +1,7 @@
-import HomePage from "../pages/Home/home.component";
-import WorkPage from "../pages/Work/work.component";
-import AboutPage from "../pages/About/about.component";
-import ContactPage from "../pages/Contact/contact.component";
+import HomePage from "../pages/home.component";
+import WorkPage from "../pages/work.component";
+import AboutPage from "../pages/about.component";
+import ContactPage from "../pages/contact.component";
 
 const Routes = [
 	{

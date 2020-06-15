@@ -1,7 +1,5 @@
 import React from "react";
-
-import sprites from "../../assets/sprite.svg";
-import "./footer.styles.scss";
+import sprites from "../assets/sprite.svg";
 
 const Footer = () => {
 	return (
@@ -28,7 +26,6 @@ const Footer = () => {
 							</svg>
 						</a>
 					</li>
-
 					<li className="footer__nav--list-item">
 						<a
 							href="https://www.instagram.com/blacstudioske/?utm_source=ig_profile_share&igshid=1p"
