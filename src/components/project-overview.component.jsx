@@ -12,7 +12,7 @@ const ProjectOverview = ({ projectItem: { title, gallery } }) => {
 	};
 	return (
 		<>
-			<div className="work__title">
+			<div className="archives__title">
 				<span>{title}</span>
 			</div>
 			<div className="work__content">

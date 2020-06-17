@@ -23,7 +23,7 @@ import pride_img2 from "../../assets/products/Pride_Lemon_Fresh_ClayRender.jpg";
 export default [
 	{
 		id: 0,
-		routeName: "work/toycar",
+		routeName: "archives/toycar",
 		title: "ToyCar",
 		thumbnail: toycar_img1,
 		reel: null,
@@ -31,7 +31,7 @@ export default [
 	},
 	{
 		id: 1,
-		routeName: "work/black",
+		routeName: "archives/black",
 		title: "Black",
 		thumbnail: black_img1,
 		reel: "https://player.vimeo.com/video/222206537?color=ffc300&title=0&byline=0&portrait=0",
@@ -39,7 +39,7 @@ export default [
 	},
 	{
 		id: 2,
-		routeName: "work/valon",
+		routeName: "archives/valon",
 		title: "Valon Product shot",
 		thumbnail: valon_img1,
 		reel: null,
@@ -47,7 +47,7 @@ export default [
 	},
 	{
 		id: 3,
-		routeName: "work/whiskey",
+		routeName: "archives/whiskey",
 		title: "Whiskey",
 		thumbnail: whiskey_img1,
 		reel: null,
@@ -55,7 +55,7 @@ export default [
 	},
 	{
 		id: 4,
-		routeName: "work/smirnoff",
+		routeName: "archives/smirnoff",
 		title: "Smirnoff Apple Green",
 		thumbnail: smirnoff_img1,
 		reel: null,
@@ -63,7 +63,7 @@ export default [
 	},
 	{
 		id: 5,
-		routeName: "work/fresh-iria",
+		routeName: "archives/fresh-iria",
 		title: "Fresh Iria Milk",
 		thumbnail: iria_img1,
 		reel: "https://player.vimeo.com/video/339977229?color=ffc300&title=0&byline=0&portrait=0",
@@ -71,7 +71,7 @@ export default [
 	},
 	{
 		id: 6,
-		routeName: "work/music",
+		routeName: "archives/music",
 		title: "Music",
 		thumbnail: music_img1,
 		reel: null,
@@ -79,7 +79,7 @@ export default [
 	},
 	{
 		id: 7,
-		routeName: "work/shade-of-grapes",
+		routeName: "archives/shade-of-grapes",
 		title: "Shades of Grapes",
 		thumbnail: grapes_img1,
 		reel: null,
@@ -87,7 +87,7 @@ export default [
 	},
 	{
 		id: 8,
-		routeName: "work/fresh-smoothies",
+		routeName: "archives/fresh-smoothies",
 		title: "Fresh Smoothies",
 		thumbnail: smoothies_img1,
 		reel: null,
@@ -95,7 +95,7 @@ export default [
 	},
 	{
 		id: 9,
-		routeName: "work/coca-cola",
+		routeName: "archives/coca-cola",
 		title: "Coca cola bottle",
 		thumbnail: coca_cola_img1,
 		reel: null,
@@ -103,7 +103,7 @@ export default [
 	},
 	{
 		id: 10,
-		routeName: "work/character-101",
+		routeName: "archives/character-101",
 		title: "Character 101",
 		thumbnail: character_img1,
 		reel: null,
@@ -111,7 +111,7 @@ export default [
 	},
 	{
 		id: 11,
-		routeName: "work/pride-lemon-fresh",
+		routeName: "archives/pride-lemon-fresh",
 		title: "Pride Lemon Fersh",
 		thumbnail: pride_img1,
 		reel: null,

@@ -8,7 +8,7 @@ import ProjectItem from "./project-item.component";
 const ProjectCollections = ({ data, ...otherProps }) => {
 	return (
 		<>
-			<div className="work__title">
+			<div className="archives__title">
 				<span>Explore our Archives</span>
 			</div>
 			<div className="project__collections">
