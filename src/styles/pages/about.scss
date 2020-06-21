@@ -1,5 +1,44 @@
 .about {
 	position: relative;
-	width: 100%;
+	width: 136.8rem;
+	margin: 0 auto;
 	min-height: 75rem;
+
+	&__content {
+		padding: 15rem 0;
+	}
+
+	&__story {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+
+		.nav {
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+
+			&-item {
+				position: relative;
+				display: inline-block;
+				font-size: 1.8rem;
+				font-weight: 400;
+				color: #ffc300;
+
+				&:not(:last-child) {
+					margin-bottom: 0.5rem;
+				}
+			}
+		}
+
+		.content {
+			position: relative;
+			display: grid;
+			grid-row-gap: 2rem;
+
+			p {
+				padding-right: 20rem;
+				margin-top: 1rem;
+			}
+		}
+	}
 }

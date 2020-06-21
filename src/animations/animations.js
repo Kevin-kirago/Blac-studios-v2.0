@@ -8,7 +8,6 @@ export const handleHoverEnter = (e) => {
 		color: "#fff",
 		ease: "power1.inOut",
 	});
-	console.log(e.target);
 };
 
 // Hover off the link
@@ -20,5 +19,4 @@ export const handleHoverExit = (e) => {
 		color: "#ffc300",
 		ease: "power1.inOut",
 	});
-	console.log(e.target);
 };
