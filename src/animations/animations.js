@@ -20,3 +20,14 @@ export const handleHoverExit = (e) => {
 		ease: "power1.inOut",
 	});
 };
+
+// Fade up for the additonal info on our menu
+export const fadeInUp = (node) => {
+	TweenLite.from(node, {
+		y: 60,
+		duration: 1,
+		delay: 0.2,
+		opacity: 0,
+		ease: "power3.inOut",
+	});
+};
