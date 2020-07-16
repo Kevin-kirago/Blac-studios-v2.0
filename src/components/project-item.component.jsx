@@ -12,23 +12,27 @@ const ProjectItem = (props) => {
 
 	return (
 		<div className="project__item">
-			<img className="img__thumbnail" src={thumbnail} alt={`project-${title}`} onClick={() => history.push(`${routeName}`)} />
-			<span className="project__item--title">{title}</span>
-			<div className="icon__set">
-				{reel ? (
-					<span className="icon__holder" onClick={() => toggleModalStatus(reel)}>
-						<span className="icon__holder--text">Play video</span>
+			<div className="project__item--thumbnailImgContainer">
+				<img className="img__thumbnail" src={thumbnail} alt={`project-${title}`} onClick={() => history.push(`${routeName}`)} />
+				<div className="icon__set">
+					{reel ? (
+						<span className="icon__holder" onClick={() => toggleModalStatus(reel)}>
+							<span className="icon__holder--text">Play video</span>
+							<svg>
+								<use href={sprites + "#icon-bx-play-circle"}></use>
+							</svg>
+						</span>
+					) : null}
+					<span className="icon__holder" onClick={() => history.push(`${routeName}`)}>
+						<span className="icon__holder--text">Explore</span>
 						<svg>
-							<use href={sprites + "#icon-bx-play-circle"}></use>
+							<use href={sprites + "#icon-bx-images"}></use>
 						</svg>
 					</span>
-				) : null}
-				<span className="icon__holder" onClick={() => history.push(`${routeName}`)}>
-					<span className="icon__holder--text">Explore</span>
-					<svg>
-						<use href={sprites + "#icon-bx-images"}></use>
-					</svg>
-				</span>
+				</div>
+			</div>
+			<div className="project__item--title">
+				<span>{title}</span>
 			</div>
 		</div>
 	);

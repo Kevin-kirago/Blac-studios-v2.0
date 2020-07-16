@@ -112,7 +112,7 @@ export default [
 	{
 		id: 11,
 		routeName: "archives/pride-lemon-fresh",
-		title: "Pride Lemon Fersh",
+		title: "Pride Lemon Fresh",
 		thumbnail: pride_img1,
 		reel: null,
 		gallery: [pride_img1, pride_img2],

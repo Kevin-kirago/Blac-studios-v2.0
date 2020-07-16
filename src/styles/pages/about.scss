@@ -11,33 +11,107 @@
 	&__story {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
+		min-height: 55rem;
+	}
 
-		.nav {
-			list-style: none;
-			display: flex;
-			flex-direction: column;
+	&__studio {
+		position: relative;
+		width: 100%;
+		height: 65rem;
+		margin-bottom: 10rem;
 
-			&-item {
-				position: relative;
-				display: inline-block;
-				font-size: 1.5rem;
-				font-weight: 400;
-				color: #ffc300;
+		video {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
 
-				&:not(:last-child) {
-					margin-bottom: 1rem;
+	&__feature {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		padding: 10rem;
+	}
+
+	&__clients {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		padding: 10rem;
+		grid-row-gap: 10rem;
+
+		.logo {
+			grid-column: 1 / -1;
+
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-row-gap: 2rem;
+
+			&__container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				svg {
+					display: inline-block;
+					fill: #888;
+					transition: all 0.4s ease-in-out;
+					cursor: pointer;
+
+					&:hover {
+						fill: #ffc300;
+					}
 				}
 			}
 		}
+	}
 
-		.content {
-			position: relative;
-			display: grid;
+	&__cta {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10rem;
 
-			p {
-				padding-right: 20rem;
-				margin-top: 0.5rem;
+		&--btn {
+			display: inline-block;
+			font-size: 1.5rem;
+			color: #ffc300;
+			text-decoration: none;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid #ffc300;
+			transition: all 0.3s ease-in-out;
+
+			&:hover,
+			&:focus {
+				transform: translateY(-3px);
 			}
 		}
+	}
+}
+
+.nav {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+
+	&-item {
+		position: relative;
+		display: inline-block;
+		font-size: 1.5rem;
+		font-weight: 400;
+		color: #ffc300;
+
+		&:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+.content {
+	position: relative;
+
+	p {
+		padding-right: 20rem;
+		margin-bottom: 2rem;
 	}
 }

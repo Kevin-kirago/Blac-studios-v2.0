@@ -12,7 +12,6 @@ const Navigation = ({ history }) => {
 	const [timeLine, setTimeLine] = useState(new TimelineMax());
 	let navigationDrawerRef = useRef(null);
 	let removeBtnRef = useRef(null);
-	let info = useRef(null);
 	let linkRefs = useRef(Routes.map(() => createRef()));
 
 	useEffect(() => {
@@ -22,7 +21,6 @@ const Navigation = ({ history }) => {
 				.to(navigationDrawerRef, 0.8, { y: 0, ease: Power3.easeInOut })
 				.to(removeBtnRef, 0.1, { opacity: 1, ease: Power3.easeInOut })
 				.staggerTo(linkList, 0.2, { autoAlpha: 1, opacity: 1 }, 0.1)
-				.from(info, { y: 60, duration: 1, delay: 0.2, opacity: 0, ease: "power3.inOut" })
 				.pause()
 		);
 	}, [timeLine]);
@@ -81,20 +79,6 @@ const Navigation = ({ history }) => {
 							</li>
 						))}
 					</ul>
-					<div className="navigation__content">
-						<div className="navigation__content--info" ref={(el) => (info = el)}>
-							<h3 className="heading__tertiary">Our Work</h3>
-							<p className="paragraph">
-								<span>Captivates</span> by diversity of colors
-								<br />
-								<span>Seduces</span> by infinite space
-								<br />
-								<span>surprise</span> by remarkable characters
-								<br />
-								<span>Takes</span> in a magical and unforgettable journey
-							</p>
-						</div>
-					</div>
 				</div>
 				<div className="navigation__drawer--footer">
 					<span className="footer__nav--header">All Works @Blac Studios {new Date().getFullYear()}</span>

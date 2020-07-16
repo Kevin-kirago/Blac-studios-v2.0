@@ -1,0 +1,30 @@
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background: rgba(0, 0, 0, 0.95);
+	overflow: hidden;
+	transition: all 0.3s ease;
+	z-index: 10;
+
+	&__closed {
+		display: none;
+	}
+
+	&__content {
+		position: relative;
+		display: none;
+		align-content: center;
+		justify-items: center;
+		height: 100%;
+		width: 100%;
+
+		&-video {
+			position: relative;
+			height: 60rem;
+			width: 80rem;
+		}
+	}
+}

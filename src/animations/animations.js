@@ -1,4 +1,4 @@
-import { TweenLite } from "gsap/all";
+import { TweenLite } from "gsap";
 
 export const handleHoverEnter = (e) => {
 	TweenLite.to(e.target, {
@@ -18,16 +18,5 @@ export const handleHoverExit = (e) => {
 		skewX: 0,
 		color: "#ffc300",
 		ease: "power1.inOut",
-	});
-};
-
-// Fade up for the additonal info on our menu
-export const fadeInUp = (node) => {
-	TweenLite.from(node, {
-		y: 60,
-		duration: 1,
-		delay: 0.2,
-		opacity: 0,
-		ease: "power3.inOut",
 	});
 };
