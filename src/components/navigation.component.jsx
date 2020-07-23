@@ -11,16 +11,14 @@ const Navigation = ({ history }) => {
 	const [navStatus, setNavStatus] = useState({ isOpen: null });
 	const [timeLine, setTimeLine] = useState(new TimelineMax());
 	let navigationDrawerRef = useRef(null);
-	let removeBtnRef = useRef(null);
 	let linkRefs = useRef(Routes.map(() => createRef()));
 
 	useEffect(() => {
 		const linkList = linkRefs.current.map((el) => el);
 		setTimeLine(
 			timeLine
-				.to(navigationDrawerRef, 0.8, { y: 0, ease: Power3.easeInOut })
-				.to(removeBtnRef, 0.1, { opacity: 1, ease: Power3.easeInOut })
-				.staggerTo(linkList, 0.2, { autoAlpha: 1, opacity: 1 }, 0.1)
+				.to(navigationDrawerRef, { y: 0, duration: 0.7, ease: Power3.easeInOut })
+				.staggerTo(linkList, 0.3, { delay: 0.1, autoAlpha: 1, opacity: 1, ease: Power3.easeInOut }, 0.1)
 				.pause()
 		);
 	}, [timeLine]);
@@ -62,7 +60,7 @@ const Navigation = ({ history }) => {
 			</div>
 			<div className="navigation__drawer" ref={(el) => (navigationDrawerRef = el)}>
 				<div className="navigation__drawer--header">
-					<img src={removeBtn} ref={(el) => (removeBtnRef = el)} alt="remove-x" onClick={handleClick} />
+					<img src={removeBtn} alt="remove-x" onClick={handleClick} />
 				</div>
 				<div className="navigation__drawer--main">
 					<ul className="navigation__list">

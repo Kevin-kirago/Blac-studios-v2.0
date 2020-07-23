@@ -32,7 +32,8 @@ const ProjectItem = (props) => {
 				</div>
 			</div>
 			<div className="project__item--title">
-				<span>{title}</span>
+				<span className="company">Double Data</span>
+				<span className="title">{title}</span>
 			</div>
 		</div>
 	);

@@ -28,6 +28,7 @@ export default [
 		thumbnail: toycar_img1,
 		reel: null,
 		gallery: [toycar_img1, toycar_img2],
+		credits: [{ production: "Director", name: "Joshua Gitonga" }],
 	},
 	{
 		id: 1,

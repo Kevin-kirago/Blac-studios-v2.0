@@ -1,17 +1,41 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { openDropDown, closeDropDown } from "../animations/animations";
 import { connect } from "react-redux";
 import { selectGalleryItem } from "../redux/gallery/gallery.selectors";
 import { toggleModal } from "../redux/modal/modal.action";
 import sprites from "../assets/sprite.svg";
 import Swiper from "react-id-swiper";
 
-const ProjectOverview = ({ projectItem: { title, gallery, reel, routeName }, toggleModalStatus, history }) => {
+const ProjectOverview = ({ projectItem: { title, gallery, reel }, toggleModalStatus, history }) => {
+	const [state, setState] = useState({ isOpen: null });
+
+	// const [active, setActive] = useState("")
+	let creditContainer = useRef(null);
+
+	useEffect(() => {
+		if (state.isOpen === true) {
+			openDropDown(creditContainer);
+		} else if (state.isOpen === false) {
+			closeDropDown(creditContainer);
+		}
+	}, [state]);
+
 	const params = {
 		effect: "fade",
 		navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
 		},
+	};
+
+	const toggleAccordion = () => {
+		if (state.isOpen === null) {
+			setState({ isOpen: true });
+		} else if (state.isOpen === true) {
+			setState({ isOpen: false });
+		} else if (state.isOpen === false) {
+			setState({ isOpen: true });
+		}
 	};
 
 	return (
@@ -27,9 +51,33 @@ const ProjectOverview = ({ projectItem: { title, gallery, reel, routeName }, tog
 						</div>
 					))}
 				</Swiper>
+				<div className="label">
+					{reel ? (
+						<span className="label__holder" onClick={() => toggleModalStatus(reel)}>
+							<span className="label__holder--text">reel</span>
+							<svg>
+								<use href={sprites + "#icon-bx-play-circle"}></use>
+							</svg>
+						</span>
+					) : null}
+					<div className="label__holder" onClick={() => history.goBack()}>
+						<span className="label__holder--text">Back to archives</span>
+						<svg>
+							<use href={sprites + "#icon-bx-images"}></use>
+						</svg>
+					</div>
+				</div>
+
 				<div className="project__details">
-					<div className="credits">
+					<div className="accordion">
 						<h2 className="heading__tertiary">CREDITS</h2>
+						<div className="accordion__btn">
+							<svg onClick={toggleAccordion}>
+								<use href={sprites + `${state.isOpen ? "#icon-bx-minus" : "#icon-bx-plus"}`} />
+							</svg>
+						</div>
+					</div>
+					<div className="credits" ref={(el) => (creditContainer = el)}>
 						<div className="credits__container">
 							<h4>Director</h4>
 							<span>Josh Gitonga</span>
@@ -46,23 +94,6 @@ const ProjectOverview = ({ projectItem: { title, gallery, reel, routeName }, tog
 							<h4>Post/Production</h4>
 							<span>Ogilvy</span>
 						</div>
-					</div>
-
-					<div className="label">
-						<div className="label__holder" onClick={() => history.goBack()}>
-							<span className="label__holder--text">Explore</span>
-							<svg>
-								<use href={sprites + "#icon-bx-images"}></use>
-							</svg>
-						</div>
-						{reel ? (
-							<span className="label__holder" onClick={() => toggleModalStatus(reel)}>
-								<span className="label__holder--text">Play video</span>
-								<svg>
-									<use href={sprites + "#icon-bx-play-circle"}></use>
-								</svg>
-							</span>
-						) : null}
 					</div>
 				</div>
 			</div>
