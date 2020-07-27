@@ -68,9 +68,9 @@ const ProjectOverview = ({ projectItem: { title, gallery, reel, credits }, toggl
 				<div className="label">
 					{reel ? (
 						<span className="label__holder" onClick={toggleProjectReel}>
-							<span className="label__holder--text">{state.isReelPlaying ? "back to slider" : "play reel"}</span>
+							<span className="label__holder--text">{state.isReelPlaying ? "See images" : "play reel"}</span>
 							<svg>
-								<use href={sprites + `${state.isReelPlaying ? "#icon-bx-code" : "#icon-bx-play-circle"}`}></use>
+								<use href={sprites + `${state.isReelPlaying ? "#icon-bx-slider" : "#icon-bx-play-circle"}`}></use>
 							</svg>
 						</span>
 					) : null}
