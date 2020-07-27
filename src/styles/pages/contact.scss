@@ -2,5 +2,25 @@
 	position: relative;
 	width: 136.8rem;
 	margin: 0 auto;
-	min-height: 75rem;
+	min-height: calc(100vh - 15rem);
+
+	display: grid;
+	align-content: center;
+	justify-items: center;
+
+	&__details {
+		display: grid;
+		align-content: center;
+		justify-items: center;
+
+		h1 {
+			text-transform: capitalize;
+			font-size: 6rem;
+		}
+
+		p {
+			text-align: center !important;
+			margin-bottom: 3rem;
+		}
+	}
 }

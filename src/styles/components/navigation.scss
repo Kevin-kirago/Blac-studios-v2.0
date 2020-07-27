@@ -24,6 +24,7 @@
 		background-color: #000;
 		z-index: 2;
 		padding: 0 4rem;
+		overflow: hidden;
 
 		display: grid;
 		grid-template-rows: 10rem 1fr 10rem;

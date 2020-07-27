@@ -5,7 +5,7 @@ import sprites from "../assets/sprite.svg";
 
 const ProjectItem = (props) => {
 	const {
-		item: { title, thumbnail, routeName, reel },
+		item: { title, company, thumbnail, routeName, reel },
 		history,
 		toggleModalStatus,
 	} = props;
@@ -32,7 +32,7 @@ const ProjectItem = (props) => {
 				</div>
 			</div>
 			<div className="project__item--title">
-				<span className="company">Double Data</span>
+				<span className="company">{company}</span>
 				<span className="title">{title}</span>
 			</div>
 		</div>

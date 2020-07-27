@@ -71,21 +71,6 @@
 		justify-content: center;
 		align-items: center;
 		padding: 10rem;
-
-		&--btn {
-			display: inline-block;
-			font-size: 1.5rem;
-			color: #ffc300;
-			text-decoration: none;
-			padding-bottom: 1rem;
-			border-bottom: 1px solid #ffc300;
-			transition: all 0.3s ease-in-out;
-
-			&:hover,
-			&:focus {
-				transform: translateY(-3px);
-			}
-		}
 	}
 }
 

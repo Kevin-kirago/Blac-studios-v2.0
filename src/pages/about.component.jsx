@@ -94,7 +94,7 @@ const AboutPage = () => {
 					</div>
 				</section>
 				<section className="about__cta">
-					<a className="about__cta--btn" href="/contact">
+					<a className="btn" href="/contact">
 						Contact Us &rarr;
 					</a>
 				</section>

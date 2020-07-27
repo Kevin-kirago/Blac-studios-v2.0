@@ -21,10 +21,29 @@
 		height: 100%;
 		width: 100%;
 
+		&--removeBtn {
+			position: absolute;
+			top: 4rem;
+			right: 5rem;
+
+			svg {
+				display: block;
+				height: 3rem;
+				width: 3rem;
+				fill: $primary-grey;
+				transition: all 0.4s ease-in-out;
+				cursor: pointer;
+
+				&:hover {
+					fill: $white;
+				}
+			}
+		}
+
 		&-video {
 			position: relative;
-			height: 70rem;
-			width: 100rem;
+			height: 60vh;
+			width: 80vw;
 		}
 	}
 }

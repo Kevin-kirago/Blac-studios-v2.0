@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { selectModal } from "../redux/modal/modal.selector";
 import { toggleModal } from "../redux/modal/modal.action";
+import sprites from "../assets/sprite.svg";
 
 const Modal = ({ modalStatus: { isModalOpen, currentProjectvideo }, toggleModalStatus }) => {
 	const [timeLine, setTimeline] = useState(new TimelineMax());
@@ -29,6 +30,11 @@ const Modal = ({ modalStatus: { isModalOpen, currentProjectvideo }, toggleModalS
 	return (
 		<div className={`modal ${isModalOpen === false ? "modal__closed" : null}`} ref={(el) => (modal = el)} onClick={() => toggleModalStatus(null)}>
 			<div className="modal__content" ref={(el) => (modalContent = el)}>
+				<div className="modal__content--removeBtn">
+					<svg>
+						<use href={sprites + "#icon-bx-x"} />
+					</svg>
+				</div>
 				<div className="modal__content-video">
 					<iframe title="Reel" src={currentProjectvideo} frameBorder="0" width="100%" height="100%"></iframe>
 				</div>
