@@ -6,7 +6,7 @@ import { toggleModal } from "../redux/modal/modal.action";
 import sprites from "../assets/sprite.svg";
 import Swiper from "react-id-swiper";
 
-const ProjectOverview = ({ projectItem: { title, gallery, reel, credits }, toggleModalStatus, history }) => {
+const ProjectOverview = ({ projectItem: { title, gallery, reel, credits }, history }) => {
 	const [state, setState] = useState({
 		isActive: null,
 		isReelPlaying: false,
@@ -33,10 +33,8 @@ const ProjectOverview = ({ projectItem: { title, gallery, reel, credits }, toggl
 	const toggleAccordion = () => {
 		if (state.isActive === null) {
 			setState({ isActive: true });
-		} else if (state.isActive === true) {
-			setState({ isActive: false });
-		} else if (state.isActive === false) {
-			setState({ isActive: true });
+		} else {
+			setState({ isActive: !state.isActive });
 		}
 	};
 
@@ -68,7 +66,7 @@ const ProjectOverview = ({ projectItem: { title, gallery, reel, credits }, toggl
 				<div className="label">
 					{reel ? (
 						<span className="label__holder" onClick={toggleProjectReel}>
-							<span className="label__holder--text">{state.isReelPlaying ? "See images" : "play reel"}</span>
+							<span className="label__holder--text">{state.isReelPlaying ? "See images" : "reel"}</span>
 							<svg>
 								<use href={sprites + `${state.isReelPlaying ? "#icon-bx-slider" : "#icon-bx-play-circle"}`}></use>
 							</svg>

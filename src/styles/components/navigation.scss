@@ -13,6 +13,11 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		@include media("<=phone") {
+			padding: 0 2rem;
+			height: 7rem;
+		}
 	}
 
 	&__drawer {
@@ -30,43 +35,84 @@
 		grid-template-rows: 10rem 1fr 10rem;
 		transform: translateY(-100%);
 
-		&--header {
-			display: flex;
-			align-items: center;
-			justify-content: flex-end;
+		@include media("<=phone") {
+			grid-template-rows: 7rem 1fr 7rem;
+			padding: 0 2rem;
+		}
+	}
 
-			img {
-				cursor: pointer;
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		svg {
+			display: inline-block;
+			fill: $primary-yellow;
+			height: 3rem;
+			width: 3rem;
+			cursor: pointer;
+
+			@include media("<=phone") {
+				height: 2.5rem;
+				width: 2.5rem;
 			}
 		}
+	}
 
-		&--main {
+	&__main {
+		display: grid;
+		padding: 0 4rem;
+
+		&--list {
+			position: relative;
+			list-style: none;
+			align-self: center;
+
 			display: grid;
-			padding: 0 4rem;
-			grid-template-columns: 2fr 1fr;
+			grid-row-gap: 2rem;
 
-			.navigation {
-				&__content {
-					display: grid;
-					align-content: center;
-					justify-items: right;
+			@include media("<=tablet") {
+				justify-items: center;
+			}
 
-					&--info {
-						text-align: end;
-
-						p {
-							text-align: end;
-						}
-					}
-				}
+			@include media("<=phone") {
+				grid-row-gap: 1rem;
 			}
 		}
 
-		&--footer {
-			display: flex;
-			align-items: center;
-			justify-content: flex-end;
+		&--item {
+			position: relative;
+			font-size: 13rem;
+			font-weight: 900;
+			line-height: 1;
+
+			@include media(">phone", "<=tablet") {
+				font-size: 9rem;
+			}
+
+			@include media(">500px", "<=phone") {
+				font-size: 7rem;
+			}
+
+			@include media("<=500px") {
+				font-size: 5rem;
+			}
+
+			&-link {
+				display: inline-block;
+				text-transform: uppercase;
+				text-decoration: none;
+				color: #ffc300;
+				opacity: 0;
+			}
 		}
+	}
+
+	&__footer {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
 	}
 
 	&__logo {
@@ -79,36 +125,24 @@
 		img {
 			display: block;
 			width: 80%;
+
+			@include media("<=phone") {
+				width: 60%;
+			}
 		}
 	}
 
 	&__menu {
-		cursor: pointer;
-	}
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
-	&__list {
-		position: relative;
-		list-style: none;
-		align-self: center;
-
-		display: grid;
-		grid-row-gap: 2rem;
-	}
-
-	&__item {
-		position: relative;
-		font-size: 13rem;
-		font-weight: 900;
-		line-height: 1;
-		height: 13rem;
-
-		&--link {
-			position: absolute;
+		svg {
 			display: inline-block;
-			text-transform: uppercase;
-			text-decoration: none;
-			color: #ffc300;
-			opacity: 0;
+			fill: $primary-yellow;
+			height: 3rem;
+			width: 3rem;
+			cursor: pointer;
 		}
 	}
 }

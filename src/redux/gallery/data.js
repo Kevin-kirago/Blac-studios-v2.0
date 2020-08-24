@@ -27,7 +27,7 @@ import pride_img2 from "../../assets/products/Pride_Lemon_Fresh_ClayRender.jpg";
 export default [
 	{
 		id: 0,
-		routeName: "archives/safaricom-digital-learning",
+		routeName: "archive/safaricom-digital-learning",
 		title: "Safaricom",
 		company: "Double Data",
 		thumbnail: safcomDigitalLearning_img1,
@@ -42,7 +42,7 @@ export default [
 	},
 	{
 		id: 1,
-		routeName: "archives/mtn-uganda",
+		routeName: "archive/mtn-uganda",
 		title: "MTN",
 		company: "Double Data",
 		thumbnail: mtnUganda_img1,
@@ -57,7 +57,7 @@ export default [
 	},
 	{
 		id: 2,
-		routeName: "archives/nestle-cerevita",
+		routeName: "archive/nestle-cerevita",
 		title: "Nestle Cerevita",
 		company: "Double Data",
 		thumbnail: nestleCerevita_img1,
@@ -72,7 +72,7 @@ export default [
 	},
 	{
 		id: 3,
-		routeName: "archives/airtel-double-data",
+		routeName: "archive/airtel-double-data",
 		title: "Airtel",
 		company: "Double Data",
 		thumbnail: airtelDoubleData_img1,
@@ -87,7 +87,7 @@ export default [
 	},
 	{
 		id: 4,
-		routeName: "archives/toycar",
+		routeName: "archive/toycar",
 		title: "ToyCar",
 		company: "Double Data",
 		thumbnail: toycar_img1,
@@ -102,7 +102,7 @@ export default [
 	},
 	{
 		id: 5,
-		routeName: "archives/black",
+		routeName: "archive/black",
 		title: "Black",
 		company: "Double Data",
 		thumbnail: black_img1,
@@ -117,7 +117,7 @@ export default [
 	},
 	{
 		id: 6,
-		routeName: "archives/valon",
+		routeName: "archive/valon",
 		title: "Valon Product shot",
 		company: "Double Data",
 		thumbnail: valon_img1,
@@ -132,11 +132,11 @@ export default [
 	},
 	{
 		id: 7,
-		routeName: "archives/whiskey",
+		routeName: "archive/whiskey",
 		title: "Whiskey",
 		company: "Double Data",
 		thumbnail: whiskey_img1,
-		reel: null,
+		reel: "https://player.vimeo.com/video/322624711?color=ffc300&title=0&byline=0&portrait=0",
 		gallery: [whiskey_img1],
 		credits: [
 			{ title: "Director", name: "Joshua Gitonga" },
@@ -147,7 +147,7 @@ export default [
 	},
 	{
 		id: 8,
-		routeName: "archives/smirnoff",
+		routeName: "archive/smirnoff",
 		title: "Smirnoff Apple Green",
 		company: "Double Data",
 		thumbnail: smirnoff_img1,
@@ -162,7 +162,7 @@ export default [
 	},
 	{
 		id: 9,
-		routeName: "archives/fresh-iria",
+		routeName: "archive/fresh-iria",
 		title: "Fresh Iria Milk",
 		company: "Double Data",
 		thumbnail: iria_img1,
@@ -177,7 +177,7 @@ export default [
 	},
 	{
 		id: 10,
-		routeName: "archives/music",
+		routeName: "archive/music",
 		title: "Music",
 		company: "Double Data",
 		thumbnail: music_img1,
@@ -193,7 +193,7 @@ export default [
 
 	{
 		id: 11,
-		routeName: "archives/shade-of-grapes",
+		routeName: "archive/shade-of-grapes",
 		title: "Shades of Grapes",
 		company: "Double Data",
 		thumbnail: grapes_img1,
@@ -208,7 +208,7 @@ export default [
 	},
 	{
 		id: 12,
-		routeName: "archives/fresh-smoothies",
+		routeName: "archive/fresh-smoothies",
 		title: "Fresh Smoothies",
 		company: "Double Data",
 		thumbnail: smoothies_img1,
@@ -223,7 +223,7 @@ export default [
 	},
 	{
 		id: 13,
-		routeName: "archives/coca-cola",
+		routeName: "archive/coca-cola",
 		title: "Coca cola bottle",
 		company: "Double Data",
 		thumbnail: coca_cola_img1,
@@ -238,7 +238,7 @@ export default [
 	},
 	{
 		id: 14,
-		routeName: "archives/character-101",
+		routeName: "archive/character-101",
 		title: "Character 101",
 		company: "Double Data",
 		thumbnail: character_img1,
@@ -253,7 +253,7 @@ export default [
 	},
 	{
 		id: 15,
-		routeName: "archives/pride-lemon-fresh",
+		routeName: "archive/pride-lemon-fresh",
 		title: "Pride Lemon Fresh",
 		company: "Double Data",
 		thumbnail: pride_img1,

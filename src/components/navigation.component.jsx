@@ -2,9 +2,8 @@ import React, { useState, useEffect, useRef, createRef } from "react";
 import { Link, withRouter } from "react-router-dom";
 import { TimelineMax, Power3 } from "gsap/all";
 import { handleHoverEnter, handleHoverExit } from "../animations/animations";
-import removeBtn from "../assets/bx-x.svg";
 import Routes from "../routes/routes";
-import NavMenu from "../assets/bx-menu.svg";
+import sprites from "../assets/sprite.svg";
 import logo from "../assets/logo.png";
 
 const Navigation = ({ history }) => {
@@ -55,30 +54,34 @@ const Navigation = ({ history }) => {
 					<img src={logo} alt="nav-logo" />
 				</Link>
 				<div className="navigation__menu" onClick={handleClick}>
-					<img src={NavMenu} alt="nav-menu" />
+					<svg>
+						<use href={sprites + "#icon-bx-menu"} />
+					</svg>
 				</div>
 			</div>
 			<div className="navigation__drawer" ref={(el) => (navigationDrawerRef = el)}>
-				<div className="navigation__drawer--header">
-					<img src={removeBtn} alt="remove-x" onClick={handleClick} />
+				<div className="navigation__header">
+					<svg onClick={handleClick}>
+						<use href={sprites + "#icon-bx-x"} />
+					</svg>
 				</div>
-				<div className="navigation__drawer--main">
-					<ul className="navigation__list">
+				<div className="navigation__main">
+					<ul className="navigation__main--list">
 						{Routes.map(({ path, page_title }, key) => (
-							<li key={key} className="navigation__item">
+							<li key={key} className="navigation__main--item">
 								<Link
 									onMouseEnter={(e) => handleHoverEnter(e)}
 									onMouseOut={(e) => handleHoverExit(e)}
 									ref={(el) => (linkRefs.current[key] = el)}
 									to={path}
-									className="navigation__item--link">
+									className="navigation__main--item-link">
 									{page_title}
 								</Link>
 							</li>
 						))}
 					</ul>
 				</div>
-				<div className="navigation__drawer--footer">
+				<div className="navigation__footer">
 					<span className="footer__nav--header">All Works @Blac Studios {new Date().getFullYear()}</span>
 				</div>
 			</div>

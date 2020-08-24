@@ -4,6 +4,10 @@
 	margin: 0 auto;
 	min-height: 75rem;
 
+	@include media(">LGdesktop") {
+		width: 144rem;
+	}
+
 	&__content {
 		padding: 15rem 0;
 	}

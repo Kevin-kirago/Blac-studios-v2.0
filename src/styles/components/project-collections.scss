@@ -1,10 +1,50 @@
 .project__collections {
 	position: relative;
-	width: 136.8rem;
+	width: 136.6rem;
 	margin: 0 auto;
 
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-column-gap: 1rem;
+	grid-column-gap: 0.5rem;
 	grid-row-gap: 2rem;
+
+	@include media("<=phone") {
+		padding: 0 2rem;
+	}
+
+	@include media(">phone", "<tablet") {
+		padding: 0 4rem;
+	}
+
+	@include media("<tablet") {
+		width: 100%;
+	}
+
+	@include media(">=tablet", "<1000px") {
+		width: 83rem;
+	}
+
+	@include media(">=1000px", "<1100px") {
+		width: 88rem;
+	}
+
+	@include media(">=1100px", "<laptop") {
+		width: 94rem;
+	}
+
+	@include media("<1100px") {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@include media(">=laptop", "<1300px") {
+		width: 100rem;
+	}
+
+	@include media(">=1300px", "<desktop") {
+		width: 114rem;
+	}
+
+	@include media(">=LGdesktop") {
+		width: 144rem;
+	}
 }
