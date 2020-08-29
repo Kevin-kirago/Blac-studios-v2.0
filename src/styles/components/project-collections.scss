@@ -9,11 +9,11 @@
 	grid-row-gap: 2rem;
 
 	@include media("<=phone") {
-		padding: 0 2rem;
+		padding: 0 1rem;
 	}
 
 	@include media(">phone", "<tablet") {
-		padding: 0 4rem;
+		padding: 0 3rem;
 	}
 
 	@include media("<tablet") {

@@ -3,13 +3,18 @@
 
 	&__description {
 		position: relative;
-		height: 10rem;
+		padding: 4rem 0;
 		width: 100%;
 		background-color: rgb(30, 30, 30);
 
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		@include media("<tablet") {
+			padding: 4rem 2rem;
+			text-align: center;
+		}
 
 		&--text {
 			font-size: 1.3rem;
@@ -20,12 +25,23 @@
 
 	&__nav {
 		position: relative;
-		height: 5rem;
+		min-height: 5rem;
 		padding: 0 4rem;
 
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-content: center;
+
+		@include media("<tablet") {
+			padding: 0 2rem;
+		}
+
+		@include media("<=phone") {
+			grid-template-rows: repeat(2, 1fr);
+			grid-template-columns: 1fr;
+			grid-row-gap: 1rem;
+			justify-items: center;
+		}
 
 		&--header {
 			font-size: 1.2rem;
@@ -34,6 +50,7 @@
 
 		&--list {
 			display: flex;
+			justify-content: flex-end;
 			list-style: none;
 
 			&-item {

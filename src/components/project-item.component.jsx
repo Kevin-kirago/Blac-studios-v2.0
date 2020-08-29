@@ -19,14 +19,14 @@ const ProjectItem = (props) => {
 						<span className="icon__holder" onClick={() => toggleModalStatus(reel)}>
 							<span className="icon__holder--text">Play video</span>
 							<svg>
-								<use href={sprites + "#icon-bx-play-circle"}></use>
+								<use href={sprites + "#play-icon"}></use>
 							</svg>
 						</span>
 					) : null}
 					<span className="icon__holder" onClick={() => history.push(`${routeName}`)}>
 						<span className="icon__holder--text">Explore</span>
 						<svg>
-							<use href={sprites + "#icon-bx-images"}></use>
+							<use href={sprites + "#gallery-icon"}></use>
 						</svg>
 					</span>
 				</div>

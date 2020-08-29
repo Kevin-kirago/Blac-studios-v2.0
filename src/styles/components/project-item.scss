@@ -46,6 +46,10 @@
 				grid-row-gap: 1rem;
 				opacity: 0;
 				transition: all 0.3s ease;
+
+				@include media("<phone") {
+					display: none;
+				}
 			}
 
 			&__holder {
@@ -58,8 +62,8 @@
 
 				svg {
 					display: inline-block;
-					height: 2.3rem;
-					width: 2.3rem;
+					height: 2.5rem;
+					width: 2.5rem;
 					fill: #bbb;
 				}
 
@@ -71,6 +75,7 @@
 					.icon__holder--text {
 						color: #fff;
 						opacity: 1;
+						align-self: center;
 					}
 				}
 
@@ -124,7 +129,7 @@
 
 	&:hover {
 		.img__thumbnail {
-			filter: brightness(30%);
+			filter: brightness(50%);
 		}
 
 		.icon__set {
