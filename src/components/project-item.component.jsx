@@ -25,7 +25,7 @@ const ProjectItem = (props) => {
 					) : null}
 					<span className="icon__holder" onClick={() => history.push(`${routeName}`)}>
 						<span className="icon__holder--text">Explore</span>
-						<svg>
+						<svg className="svg-gallery">
 							<use href={sprites + "#gallery-icon"}></use>
 						</svg>
 					</span>
@@ -38,7 +38,7 @@ const ProjectItem = (props) => {
 		</div>
 	);
 };
-
+ 
 const mapDispatchStateToProps = (dispatchEvent) => ({
 	toggleModalStatus: (reel) => dispatchEvent(toggleModal(reel)),
 });

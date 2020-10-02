@@ -63,39 +63,42 @@ const ProjectOverview = ({ projectItem: { title, gallery, reel, credits }, histo
 						</div>
 					)}
 				</div>
-				<div className="label">
-					{reel ? (
-						<span className="label__holder" onClick={toggleProjectReel}>
-							<span className="label__holder--text">{state.isReelPlaying ? "See images" : "reel"}</span>
-							<svg>
-								<use href={sprites + `${state.isReelPlaying ? "#icon-bx-slider" : "#icon-bx-play-circle"}`}></use>
-							</svg>
-						</span>
-					) : null}
-					<div className="label__holder" onClick={() => history.goBack()}>
-						<span className="label__holder--text">Back to archives</span>
-						<svg>
-							<use href={sprites + "#icon-bx-images"}></use>
-						</svg>
-					</div>
-				</div>
 
 				<div className="project__details">
-					<div className="accordion">
-						<h2 className="heading__tertiary">CREDITS</h2>
-						<div className="accordion__btn">
-							<svg onClick={toggleAccordion}>
-								<use href={sprites + `${state.isActive ? "#icon-bx-minus" : "#icon-bx-plus"}`} />
+					<div className="label">
+						{reel ? (
+							<span className="label__holder" onClick={toggleProjectReel}>
+								<span className="label__holder--text">{state.isReelPlaying ? "See images" : "reel"}</span>
+								<svg>
+									<use href={sprites + `${state.isReelPlaying ? "#icon-bx-slider" : "#play-icon"}`}></use>
+								</svg>
+							</span>
+						) : null}
+						<div className="label__holder" onClick={() => history.goBack()}>
+							<span className="label__holder--text">Back to archives</span>
+							<svg className="svg-gallery">
+								<use href={sprites + "#gallery-icon"}></use>
 							</svg>
 						</div>
 					</div>
-					<div className="credits" ref={(el) => (creditContainer = el)}>
-						{credits.map(({ title, name }, index) => (
-							<div className="credits__container" key={index}>
-								<h4>{title}</h4>
-								<span>{name}</span>
+
+					<div className="details">
+						<div className="accordion">
+							<h2 className="heading__tertiary">CREDITS</h2>
+							<div className="accordion__btn">
+								<svg onClick={toggleAccordion}>
+									<use href={sprites + `${state.isActive ? "#icon-bx-minus" : "#icon-bx-plus"}`} />
+								</svg>
 							</div>
-						))}
+						</div>
+						<div className="credits" ref={(el) => (creditContainer = el)}>
+							{credits.map(({ title, name }, index) => (
+								<div className="credits__container" key={index}>
+									<h4>{title}</h4>
+									<span>{name}</span>
+								</div>
+							))}
+						</div>
 					</div>
 				</div>
 			</div>
