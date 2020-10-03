@@ -5,7 +5,11 @@
 	margin: 0 auto;
 
 	@include media("<1100px") {
-		width: 100vw;
+		width: 100%;
+	}
+
+	@include media("<phone") {
+		padding: 0 2rem;
 	}
 
 	@include media(">=phone", "<tablet") {
@@ -32,6 +36,10 @@
 			position: relative;
 			width: 100%;
 			height: 65rem;
+
+			@include media("<phone") {
+				height: 35vw;
+			}
 
 			@include media(">=phone", "<1100px") {
 				height: 38vw;
@@ -92,8 +100,6 @@
 		@include media(">phone", "<=1100px") {
 			margin: 3rem 11vw;
 		}
-
-		
 
 		.label {
 			display: grid;
