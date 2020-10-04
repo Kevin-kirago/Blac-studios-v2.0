@@ -101,6 +101,10 @@
 			margin: 3rem 11vw;
 		}
 
+		@include media("<phone") {
+			margin: 2rem 13vw;
+		}
+
 		.label {
 			display: grid;
 			align-content: start;
