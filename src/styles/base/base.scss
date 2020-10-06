@@ -51,6 +51,14 @@ body {
 		text-transform: uppercase;
 		margin-bottom: 3rem;
 		line-height: 1.3;
+
+		@include media(">1300px", "<desktop") {
+			font-size: 3rem;
+		}
+
+		@include media("<1300px") {
+			font-size: 2.7rem;
+		}
 	}
 
 	&__tertiary {
