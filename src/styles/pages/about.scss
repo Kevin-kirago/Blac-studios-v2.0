@@ -24,18 +24,32 @@
 		padding: 0 4rem;
 	}
 
+	@include media("<=phone") {
+		padding: 0 2rem;
+	}
+
 	&__content {
 		padding: 15rem 0;
 
 		@include media("<1300px") {
 			padding: 12rem 0;
 		}
+
+		@include media("<phone") {
+			padding: 10rem 0;
+		}
 	}
 
 	&__story {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
-		min-height: 55vh;
+		min-height: 50rem;
+
+		@include media("<=phone") {
+			grid-template-columns: 1fr;
+			grid-template-rows: min-content auto;
+			grid-row-gap: 3rem;
+		}
 	}
 
 	&__studio {
@@ -46,6 +60,10 @@
 
 		@include media("<laptop") {
 			height: 45rem;
+		}
+
+		@include media("<phone") {
+			height: 25rem;
 		}
 
 		video {
@@ -60,6 +78,13 @@
 		display: grid;
 		grid-template-columns: 1fr 2fr;
 		padding: 10rem;
+
+		@include media("<=phone") {
+			padding: 2rem;
+			grid-template-columns: 1fr;
+			grid-template-rows: min-content auto;
+			grid-row-gap: 3rem;
+		}
 	}
 
 	&__clients {
@@ -68,12 +93,23 @@
 		padding: 10rem;
 		grid-row-gap: 10rem;
 
+		@include media("<=phone") {
+			padding: 2rem;
+			grid-template-columns: 1fr;
+			grid-template-rows: min-content auto;
+			grid-row-gap: 3rem;
+		}
+
 		.logo {
 			grid-column: 1 / -1;
 
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
 			grid-row-gap: 2rem;
+
+			@include media("<phone") {
+				display: none;
+			}
 
 			&__container {
 				display: flex;
@@ -136,12 +172,18 @@
 		}
 
 		@include media(">1000px", "<1300px") {
+			font-size: 1.5rem;
 			padding-right: 7rem;
 		}
 
 		@include media(">phone", "<1000px") {
 			padding-right: 4rem;
 			font-size: 1.4rem;
+		}
+
+		@include media("<=phone") {
+			padding-right: 0;
+			font-size: 1.3rem;
 		}
 	}
 }
