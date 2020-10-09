@@ -46,6 +46,7 @@
 		min-height: 50rem;
 
 		@include media("<=phone") {
+			min-height: 55rem;
 			grid-template-columns: 1fr;
 			grid-template-rows: min-content auto;
 			grid-row-gap: 3rem;
@@ -63,7 +64,8 @@
 		}
 
 		@include media("<phone") {
-			height: 25rem;
+			height: 20rem;
+			margin-bottom: 5rem;
 		}
 
 		video {
@@ -108,7 +110,7 @@
 			grid-row-gap: 2rem;
 
 			@include media("<phone") {
-				display: none;
+				grid-template-columns: repeat(3, 1fr);
 			}
 
 			&__container {
@@ -121,6 +123,11 @@
 					fill: #888;
 					transition: all 0.4s ease-in-out;
 					cursor: pointer;
+
+					@include media("<phone") {
+						height: 6rem;
+						width: 6rem;
+					}
 
 					&:hover {
 						fill: #ffc300;
