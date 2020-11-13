@@ -27,12 +27,12 @@ import pride_img2 from "../../assets/products/Pride_Lemon_Fresh_ClayRender.jpg";
 export default [
 	{
 		id: 0,
-		routeName: "archive/safaricom-digital-learning",
-		title: "Safaricom",
+		routeName: "archive/nestle-cerevita",
+		title: "Nestle Cerevita",
 		company: "Double Data",
-		thumbnail: safcomDigitalLearning_img1,
-		reel: null,
-		gallery: [safcomDigitalLearning_img1],
+		thumbnail: nestleCerevita_img1,
+		reel: "https://player.vimeo.com/video/474557862?color=ffc300&title=0&byline=0&portrait=0",
+		gallery: [nestleCerevita_img1],
 		credits: [
 			{ title: "Director", name: "Joshua Gitonga" },
 			{ title: "Production", name: "C - Hub" },
@@ -46,7 +46,7 @@ export default [
 		title: "MTN",
 		company: "Double Data",
 		thumbnail: mtnUganda_img1,
-		reel: null,
+		reel: "https://player.vimeo.com/video/468443755?color=ffc300&title=0&byline=0&portrait=0",
 		gallery: [mtnUganda_img1],
 		credits: [
 			{ title: "Director", name: "Joshua Gitonga" },
@@ -57,12 +57,12 @@ export default [
 	},
 	{
 		id: 2,
-		routeName: "archive/nestle-cerevita",
-		title: "Nestle Cerevita",
+		routeName: "archive/safaricom-digital-learning",
+		title: "Safaricom",
 		company: "Double Data",
-		thumbnail: nestleCerevita_img1,
-		reel: null,
-		gallery: [nestleCerevita_img1],
+		thumbnail: safcomDigitalLearning_img1,
+		reel: "https://player.vimeo.com/video/453920163?color=ffc300&title=0&byline=0&portrait=0",
+		gallery: [safcomDigitalLearning_img1],
 		credits: [
 			{ title: "Director", name: "Joshua Gitonga" },
 			{ title: "Production", name: "C - Hub" },
