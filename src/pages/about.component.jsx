@@ -38,7 +38,7 @@ const AboutPage = () => {
 							<br /> Our goal is to please and exceed your needs and expectations, with our intense desire for knowledge and passion in
 							&nbsp;<span>ANIMATION</span>, <span>VISUAL EFFECTS</span> and <span>DESIGN</span> for any media.
 							<br /> We focus on going above and beyond creatively thanks to our teams diverse backgrounds, be it cinema, television or
-							post production. We are proud of our creativity and savviness in what we do. Our creativity works hand in hand with our
+							Advertisment. We are proud of our creativity and savviness in what we do. Our creativity works hand in hand with our
 							devotion to build your project from start to finish, <span>on time</span> and <span>within the budget</span>.
 						</p>
 						<p className="paragraph">
