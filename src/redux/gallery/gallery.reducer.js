@@ -1,4 +1,5 @@
 import GALLERY_DATA from "./data";
+console.log(GALLERY_DATA);
 
 const initial_state = {
 	data: GALLERY_DATA,

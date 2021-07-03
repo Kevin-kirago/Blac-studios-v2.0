@@ -24,7 +24,7 @@ import character_img2 from "../../assets/products/Character101-2.jpg";
 import pride_img1 from "../../assets/products/Pride_Lemon_Fresh.jpg";
 import pride_img2 from "../../assets/products/Pride_Lemon_Fresh_ClayRender.jpg";
 
-export default [
+const GALLERY_DATA = [
 	{
 		id: 0,
 		routeName: "archive/nestle-cerevita",
@@ -267,3 +267,5 @@ export default [
 		],
 	},
 ];
+
+export default GALLERY_DATA;
