@@ -1,7 +1,7 @@
 import React from "react";
 import Swiper from "react-id-swiper";
 import Slide from "../components/slide.component";
-import "swiper/css/swiper.css";
+import "swiper/swiper-bundle.css";
 
 // images
 import iria from "../assets/products/iria.png";
