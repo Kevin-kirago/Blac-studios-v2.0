@@ -10,8 +10,9 @@
 		height: 10rem;
 		width: 100%;
 		padding: 0 4rem;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
 		@include media("<=phone") {
 			padding: 0 2rem;
@@ -21,7 +22,6 @@
 
 	&__logo {
 		position: relative;
-		justify-self: end;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -29,8 +29,8 @@
 
 		svg {
 			display: inline-block;
-			height: 6rem;
-			width: 6rem;
+			height: 5rem;
+			width: 5rem;
 			box-sizing: border-box;
 
 			@include media("<=phone") {
