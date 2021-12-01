@@ -36,7 +36,7 @@ const AboutPage = () => {
 							WE ARE A DESIGN-LED CREATIVE STUDIO, WORKING WITH ANIMATION, VFX AND EMERGING TECHNOLOGIES.
 						</h1>
 						<p className="paragraph">
-							<span>ON THE GRID</span> was established in 2016.
+							<span>OnTheGrid</span> was established in 2016.
 							<br /> Our goal is to please and exceed your needs and expectations, with our intense desire for knowledge and passion in
 							&nbsp;<span>ANIMATION</span>, <span>VISUAL EFFECTS</span> and <span>DESIGN</span> for any media.
 							<br /> We focus on going above and beyond creatively thanks to our teams diverse backgrounds, be it cinema, television or
@@ -44,7 +44,7 @@ const AboutPage = () => {
 							devotion to build your project from start to finish, <span>on time</span> and <span>within the budget</span>.
 						</p>
 						<p className="paragraph">
-							<span>ON THE GRID</span> offers a broad range of 3D Photorealistic <span>CGI</span> design and production services for
+							<span>OnTheGrid</span> offers a broad range of 3D Photorealistic <span>CGI</span> design and production services for
 							creating the perfect illusion.
 							<br /> The only limit is your imagination. Our team made up of a photographer, 3D-Artist, Modellers and Designers will
 							turn your idea into a reality.
@@ -81,7 +81,7 @@ const AboutPage = () => {
 					</ul>
 					<div className="content">
 						<p className="paragraph">
-							<b>ON THE GRID</b> has been honored to partner up with these clients. We give thanks to those who give us opportunity to
+							<b>OnTheGrid</b> has been honored to partner up with these clients. We give thanks to those who give us opportunity to
 							make content we love.
 						</p>
 					</div>
