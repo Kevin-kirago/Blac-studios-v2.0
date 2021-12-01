@@ -50,7 +50,6 @@ const Navigation = ({ history }) => {
 	return (
 		<div className="navigation">
 			<div className="navigation__wrapper">
-				<div>&nbsp;</div>
 				<Link to="/" className="navigation__logo">
 					<OnTheGridLogo onClick={handleClick} />
 				</Link>
