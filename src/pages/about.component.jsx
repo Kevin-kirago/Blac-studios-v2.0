@@ -22,11 +22,13 @@ const AboutPage = () => {
 			<div className="about__content">
 				<section className="about__story">
 					<ul className="nav">
+						{/* <li className="nav-item">
+							<a href="#what-we-do">
+								<span>/ What we do</span>
+							</a>
+						</li> */}
 						<li className="nav-item">
-							<span>/ What we do</span>
-						</li>
-						<li className="nav-item">
-							<span>/ Our clients</span>
+							<span>/ Who are we</span>
 						</li>
 					</ul>
 					<div className="content">

@@ -33,12 +33,7 @@ const GALLERY_DATA = [
 		thumbnail: nestleCerevita_img1,
 		reel: "https://player.vimeo.com/video/474557862?color=ffc300&title=0&byline=0&portrait=0",
 		gallery: [nestleCerevita_img1],
-		credits: [
-			{ title: "Director", name: "Joshua Gitonga" },
-			{ title: "Production", name: "C - Hub" },
-			{ title: "Agency", name: "Ogilvy" },
-			{ title: "Post Production", name: "Ogilvy" },
-		],
+		credits: null,
 	},
 	{
 		id: 1,
@@ -48,12 +43,7 @@ const GALLERY_DATA = [
 		thumbnail: mtnUganda_img1,
 		reel: "https://player.vimeo.com/video/468443755?color=ffc300&title=0&byline=0&portrait=0",
 		gallery: [mtnUganda_img1],
-		credits: [
-			{ title: "Director", name: "Joshua Gitonga" },
-			{ title: "Production", name: "C - Hub" },
-			{ title: "Agency", name: "Ogilvy" },
-			{ title: "Post Production", name: "Ogilvy" },
-		],
+		credits: null,
 	},
 	{
 		id: 2,
@@ -63,12 +53,7 @@ const GALLERY_DATA = [
 		thumbnail: safcomDigitalLearning_img1,
 		reel: "https://player.vimeo.com/video/453920163?color=ffc300&title=0&byline=0&portrait=0",
 		gallery: [safcomDigitalLearning_img1],
-		credits: [
-			{ title: "Director", name: "Joshua Gitonga" },
-			{ title: "Production", name: "C - Hub" },
-			{ title: "Agency", name: "Ogilvy" },
-			{ title: "Post Production", name: "Ogilvy" },
-		],
+		credits: null,
 	},
 	{
 		id: 3,
@@ -78,12 +63,7 @@ const GALLERY_DATA = [
 		thumbnail: airtelDoubleData_img1,
 		reel: null,
 		gallery: [airtelDoubleData_img1],
-		credits: [
-			{ title: "Director", name: "Joshua Gitonga" },
-			{ title: "Production", name: "C - Hub" },
-			{ title: "Agency", name: "Ogilvy" },
-			{ title: "Post Production", name: "Ogilvy" },
-		],
+		credits: null,
 	},
 	{
 		id: 4,
@@ -93,12 +73,7 @@ const GALLERY_DATA = [
 		thumbnail: toycar_img1,
 		reel: null,
 		gallery: [toycar_img1, toycar_img2],
-		credits: [
-			{ title: "Director", name: "Joshua Gitonga" },
-			{ title: "Production", name: "C - Hub" },
-			{ title: "Agency", name: "Ogilvy" },
-			{ title: "Post Production", name: "Ogilvy" },
-		],
+		credits: null,
 	},
 	{
 		id: 5,
@@ -108,12 +83,7 @@ const GALLERY_DATA = [
 		thumbnail: black_img1,
 		reel: "https://player.vimeo.com/video/222206537?color=ffc300&title=0&byline=0&portrait=0",
 		gallery: [black_img1],
-		credits: [
-			{ title: "Director", name: "Joshua Gitonga" },
-			{ title: "Production", name: "C - Hub" },
-			{ title: "Agency", name: "Ogilvy" },
-			{ title: "Post Production", name: "Ogilvy" },
-		],
+		credits: null,
 	},
 	{
 		id: 6,
@@ -123,12 +93,7 @@ const GALLERY_DATA = [
 		thumbnail: valon_img1,
 		reel: null,
 		gallery: [valon_img1, valon_img2],
-		credits: [
-			{ title: "Director", name: "Joshua Gitonga" },
-			{ title: "Production", name: "C - Hub" },
-			{ title: "Agency", name: "Ogilvy" },
-			{ title: "Post Production", name: "Ogilvy" },
-		],
+		credits: null,
 	},
 	{
 		id: 7,
@@ -138,12 +103,7 @@ const GALLERY_DATA = [
 		thumbnail: whiskey_img1,
 		reel: "https://player.vimeo.com/video/322624711?color=ffc300&title=0&byline=0&portrait=0",
 		gallery: [whiskey_img1],
-		credits: [
-			{ title: "Director", name: "Joshua Gitonga" },
-			{ title: "Production", name: "C - Hub" },
-			{ title: "Agency", name: "Ogilvy" },
-			{ title: "Post Production", name: "Ogilvy" },
-		],
+		credits: null,
 	},
 	{
 		id: 8,
@@ -153,12 +113,7 @@ const GALLERY_DATA = [
 		thumbnail: smirnoff_img1,
 		reel: null,
 		gallery: [smirnoff_img1, smirnoff_img2],
-		credits: [
-			{ title: "Director", name: "Joshua Gitonga" },
-			{ title: "Production", name: "C - Hub" },
-			{ title: "Agency", name: "Ogilvy" },
-			{ title: "Post Production", name: "Ogilvy" },
-		],
+		credits: null,
 	},
 	{
 		id: 9,
@@ -168,12 +123,7 @@ const GALLERY_DATA = [
 		thumbnail: iria_img1,
 		reel: "https://player.vimeo.com/video/339977229?color=ffc300&title=0&byline=0&portrait=0",
 		gallery: [iria_img1, iria_img2],
-		credits: [
-			{ title: "Director", name: "Joshua Gitonga" },
-			{ title: "Production", name: "C - Hub" },
-			{ title: "Agency", name: "Ogilvy" },
-			{ title: "Post Production", name: "Ogilvy" },
-		],
+		credits: null,
 	},
 	{
 		id: 10,
@@ -183,12 +133,7 @@ const GALLERY_DATA = [
 		thumbnail: music_img1,
 		reel: null,
 		gallery: [music_img1],
-		credits: [
-			{ title: "Director", name: "Joshua Gitonga" },
-			{ title: "Production", name: "C - Hub" },
-			{ title: "Agency", name: "Ogilvy" },
-			{ title: "Post Production", name: "Ogilvy" },
-		],
+		credits: null,
 	},
 
 	{
@@ -199,12 +144,7 @@ const GALLERY_DATA = [
 		thumbnail: grapes_img1,
 		reel: null,
 		gallery: [grapes_img1, grapes_img2],
-		credits: [
-			{ title: "Director", name: "Joshua Gitonga" },
-			{ title: "Production", name: "C - Hub" },
-			{ title: "Agency", name: "Ogilvy" },
-			{ title: "Post Production", name: "Ogilvy" },
-		],
+		credits: null,
 	},
 	{
 		id: 12,
@@ -214,12 +154,7 @@ const GALLERY_DATA = [
 		thumbnail: smoothies_img1,
 		reel: null,
 		gallery: [smoothies_img1, smoothies_img2],
-		credits: [
-			{ title: "Director", name: "Joshua Gitonga" },
-			{ title: "Production", name: "C - Hub" },
-			{ title: "Agency", name: "Ogilvy" },
-			{ title: "Post Production", name: "Ogilvy" },
-		],
+		credits: null,
 	},
 	{
 		id: 13,
@@ -229,12 +164,7 @@ const GALLERY_DATA = [
 		thumbnail: coca_cola_img1,
 		reel: null,
 		gallery: [coca_cola_img1, coca_cola_img2],
-		credits: [
-			{ title: "Director", name: "Joshua Gitonga" },
-			{ title: "Production", name: "C - Hub" },
-			{ title: "Agency", name: "Ogilvy" },
-			{ title: "Post Production", name: "Ogilvy" },
-		],
+		credits: null,
 	},
 	{
 		id: 14,
@@ -244,12 +174,7 @@ const GALLERY_DATA = [
 		thumbnail: character_img1,
 		reel: null,
 		gallery: [character_img1, character_img2],
-		credits: [
-			{ title: "Director", name: "Joshua Gitonga" },
-			{ title: "Production", name: "C - Hub" },
-			{ title: "Agency", name: "Ogilvy" },
-			{ title: "Post Production", name: "Ogilvy" },
-		],
+		credits: null,
 	},
 	{
 		id: 15,
@@ -259,12 +184,7 @@ const GALLERY_DATA = [
 		thumbnail: pride_img1,
 		reel: null,
 		gallery: [pride_img1, pride_img2],
-		credits: [
-			{ title: "Director", name: "Joshua Gitonga" },
-			{ title: "Production", name: "C - Hub" },
-			{ title: "Agency", name: "Ogilvy" },
-			{ title: "Post Production", name: "Ogilvy" },
-		],
+		credits: null,
 	},
 ];
 

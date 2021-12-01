@@ -4,7 +4,11 @@ import { connect } from "react-redux";
 import { selectGalleryItem } from "../redux/gallery/gallery.selectors";
 import { toggleModal } from "../redux/modal/modal.action";
 import sprites from "../assets/sprite.svg";
-import Swiper from "react-id-swiper";
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
+import { Navigation, EffectFade } from "swiper";
+import "swiper/swiper-bundle.min.css";
 
 const ProjectOverview = ({ projectItem: { title, gallery, reel, credits }, history }) => {
 	const [state, setState] = useState({
@@ -22,14 +26,6 @@ const ProjectOverview = ({ projectItem: { title, gallery, reel, credits }, histo
 		}
 	}, [state]);
 
-	const params = {
-		effect: "fade",
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
-	};
-
 	const toggleAccordion = () => {
 		if (state.isActive === null) {
 			setState({ isActive: true });
@@ -42,6 +38,12 @@ const ProjectOverview = ({ projectItem: { title, gallery, reel, credits }, histo
 		setState({ isReelPlaying: !state.isReelPlaying });
 	};
 
+	const params = {
+		modules: [Navigation, EffectFade],
+		effect: "fade",
+		navigation: true,
+	};
+
 	return (
 		<>
 			<div className="archives__title">
@@ -52,9 +54,9 @@ const ProjectOverview = ({ projectItem: { title, gallery, reel, credits }, histo
 					{!state.isReelPlaying ? (
 						<Swiper {...params}>
 							{gallery.map((img) => (
-								<div className="project__content-img" key={gallery.indexOf(img)}>
+								<SwiperSlide className="project__content-img" key={gallery.indexOf(img)}>
 									<img src={img} alt={`project-${title}`} />
-								</div>
+								</SwiperSlide>
 							))}
 						</Swiper>
 					) : (
@@ -82,24 +84,28 @@ const ProjectOverview = ({ projectItem: { title, gallery, reel, credits }, histo
 						</div>
 					</div>
 
-					<div className="details">
-						<div className="accordion">
-							<h2 className="heading__tertiary">CREDITS</h2>
-							<div className="accordion__btn">
-								<svg onClick={toggleAccordion}>
-									<use href={sprites + `${state.isActive ? "#icon-bx-minus" : "#icon-bx-plus"}`} />
-								</svg>
+					{credits !== null ? (
+						<div className="details">
+							<div className="accordion">
+								<h2 className="heading__tertiary">CREDITS</h2>
+								<div className="accordion__btn">
+									<svg onClick={toggleAccordion}>
+										<use href={sprites + `${state.isActive ? "#icon-bx-minus" : "#icon-bx-plus"}`} />
+									</svg>
+								</div>
+							</div>
+							<div className="credits" ref={(el) => (creditContainer = el)}>
+								{credits.map(({ title, name }, index) => (
+									<div className="credits__container" key={index}>
+										<h4>{title}</h4>
+										<span>{name}</span>
+									</div>
+								))}
 							</div>
 						</div>
-						<div className="credits" ref={(el) => (creditContainer = el)}>
-							{credits.map(({ title, name }, index) => (
-								<div className="credits__container" key={index}>
-									<h4>{title}</h4>
-									<span>{name}</span>
-								</div>
-							))}
-						</div>
-					</div>
+					) : (
+						""
+					)}
 				</div>
 			</div>
 		</>

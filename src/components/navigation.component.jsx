@@ -4,6 +4,7 @@ import { TimelineMax, Power3 } from "gsap/all";
 import { handleHoverEnter, handleHoverExit } from "../animations/animations";
 import Routes from "../routes/routes";
 import sprites from "../assets/sprite.svg";
+import { ReactComponent as OnTheGridLogo } from "../assets/logo-5.svg";
 
 const Navigation = ({ history }) => {
 	const [navStatus, setNavStatus] = useState({ isOpen: null });
@@ -50,9 +51,7 @@ const Navigation = ({ history }) => {
 		<div className="navigation">
 			<div className="navigation__wrapper">
 				<Link to="/" className="navigation__logo">
-					<svg onClick={handleClick}>
-						<use href={sprites + "#blac-studios-logo"} />
-					</svg>
+					<OnTheGridLogo onClick={handleClick} />
 				</Link>
 				<div className="navigation__menu" onClick={handleClick}>
 					<svg>
