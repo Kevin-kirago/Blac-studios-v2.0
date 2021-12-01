@@ -32,13 +32,13 @@ const ProjectItem = (props) => {
 				</div>
 			</div>
 			<div className="project__item--title">
-				<span className="company">{company}</span>
 				<span className="title">{title}</span>
+				<span className="company">{company}</span>
 			</div>
 		</div>
 	);
 };
- 
+
 const mapDispatchStateToProps = (dispatchEvent) => ({
 	toggleModalStatus: (reel) => dispatchEvent(toggleModal(reel)),
 });

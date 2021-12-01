@@ -6,7 +6,7 @@ const ContactPage = () => {
 			<div className="contact__details">
 				<h1 className="heading__primary">Contact Us</h1>
 				<p className="paragraph">
-					Blac Studios <br />
+					On The Grid <br />
 					P.O Box 64167 - 00619 <br />
 					Tel: +254 715 521058 <br />
 					Nairobi, Kenya.
