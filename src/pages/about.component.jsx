@@ -3,19 +3,7 @@ import aboutMovie from "../assets/about_movie.mp4";
 import clientSprites from "../assets/clients/symbol-defs.svg";
 
 const AboutPage = () => {
-	const sprites = [
-		"#icon-bxl-visa",
-		"#icon-bxl-digg",
-		"#icon-bxl-dropbox",
-		"#icon-bxl-ebay",
-		"#icon-bxl-joomla",
-		"#icon-bxl-jquery",
-		"#icon-bxl-less",
-		"#icon-bxl-microsoft",
-		"#icon-bxl-react",
-		"#icon-bxl-wix",
-		"#icon-bxl-vuejs",
-	];
+	const sprites = ["#icon-bxl-visa", "#icon-bxl-digg", "#icon-bxl-dropbox", "#icon-bxl-ebay"];
 
 	return (
 		<div className="about">
@@ -28,7 +16,7 @@ const AboutPage = () => {
 							</a>
 						</li> */}
 						<li className="nav-item">
-							<span>/ Who are we</span>
+							<span>/ Who we are</span>
 						</li>
 					</ul>
 					<div className="content">
@@ -94,11 +82,6 @@ const AboutPage = () => {
 							</div>
 						))}
 					</div>
-				</section>
-				<section className="about__cta">
-					<a className="btn" href="/contact">
-						Contact Us &rarr;
-					</a>
 				</section>
 			</div>
 		</div>

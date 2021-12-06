@@ -33,7 +33,7 @@ const Footer = () => {
 				</span>
 			</div>
 			<div className="footer__nav">
-				<span className="footer__nav--header">All Works | copyrights &copy; {new Date().getFullYear()} Blac Studios</span>
+				<span className="footer__nav--header">All Works | copyrights &copy; {new Date().getFullYear()} OnTheGrid</span>
 				<ul className="footer__nav--list">
 					{linkData.map((item) => (
 						<li className="footer__nav--list-item" key={linkData.indexOf(item)}>

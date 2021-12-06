@@ -11,9 +11,9 @@ const Routes = [
 		exact: true,
 	},
 	{
-		path: "/archive",
+		path: "/feeds",
 		component: WorkPage,
-		page_title: "Archive",
+		page_title: "Feeds",
 		exact: false,
 	},
 	{
@@ -23,9 +23,9 @@ const Routes = [
 		exact: true,
 	},
 	{
-		path: "/contact",
+		path: "/career",
 		component: ContactPage,
-		page_title: "Contact",
+		page_title: "Careers",
 		exact: true,
 	},
 ];

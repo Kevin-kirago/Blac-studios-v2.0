@@ -9,7 +9,7 @@ const ProjectCollections = ({ data, ...otherProps }) => {
 	return (
 		<>
 			<div className="archives__title">
-				<span>Explore our Archives</span>
+				<span>Explore our Archive</span>
 			</div>
 			<div className="project__collections">
 				{data.map((item) => (

@@ -3,7 +3,15 @@
 	width: 100%;
 	height: inherit;
 
-	.swiper {
+	.video__container {
+		position: relative;
+		width: 100% !important;
+		height: 100vh !important;
+		overflow: hidden;
+		object-fit: cover;
+	}
+
+	/*.swiper {
 		&-container {
 			position: relative;
 			width: 100% !important;
@@ -23,5 +31,5 @@
 				background-color: #ffc300 !important;
 			}
 		}
-	}
+	}*/
 }

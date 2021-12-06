@@ -82,7 +82,7 @@ const Navigation = ({ history }) => {
 					</ul>
 				</div>
 				<div className="navigation__footer">
-					<span className="footer__nav--header">All Works @Blac Studios {new Date().getFullYear()}</span>
+					<span className="footer__nav--header">All Works @OnTheGrid {new Date().getFullYear()}</span>
 				</div>
 			</div>
 		</div>
