@@ -10,11 +10,6 @@ const AboutPage = () => {
 			<div className="about__content">
 				<section className="about__story">
 					<ul className="nav">
-						{/* <li className="nav-item">
-							<a href="#what-we-do">
-								<span>/ What we do</span>
-							</a>
-						</li> */}
 						<li className="nav-item">
 							<span>/ Who we are</span>
 						</li>

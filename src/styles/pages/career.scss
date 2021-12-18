@@ -1,0 +1,52 @@
+.career {
+	position: relative;
+	width: 136.8rem;
+	margin: 0 auto;
+	min-height: 100vh;
+
+	@include media(">LGdesktop") {
+		width: 144rem;
+	}
+
+	@include media("<desktop") {
+		width: 100%;
+	}
+
+	@include media(">1300px", "<desktop") {
+		padding: 0 10rem;
+	}
+
+	@include media(">1000px", "<1300px") {
+		padding: 0 7rem;
+	}
+
+	@include media(">phone", "<1000px") {
+		padding: 0 4rem;
+	}
+
+	@include media("<=phone") {
+		padding: 0 2rem;
+	}
+
+	&__story {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+
+		padding: 15rem 0;
+
+		@include media("<1300px") {
+			padding: 12rem 0;
+		}
+
+		@include media("<phone") {
+			padding: 10rem 0;
+		}
+
+		@include media("<=phone") {
+			min-height: 55rem;
+			grid-template-columns: 1fr;
+			grid-template-rows: min-content auto;
+			grid-row-gap: 3rem;
+		}
+	}
+}

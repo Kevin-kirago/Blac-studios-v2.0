@@ -67,6 +67,10 @@ body {
 		@include media("<=phone") {
 			font-size: 2rem;
 		}
+
+		span {
+			text-transform: none !important;
+		}
 	}
 
 	&__tertiary {

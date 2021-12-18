@@ -27,7 +27,7 @@ import pride_img2 from "../../assets/products/Pride_Lemon_Fresh_ClayRender.jpg";
 const GALLERY_DATA = [
 	{
 		id: 0,
-		routeName: "feeds/nestle-cerevita",
+		routeName: "work/nestle-cerevita",
 		title: "Nestle Cerevita",
 		company: "OnTheGrid",
 		thumbnail: nestleCerevita_img1,
@@ -37,7 +37,7 @@ const GALLERY_DATA = [
 	},
 	{
 		id: 1,
-		routeName: "feeds/mtn-uganda",
+		routeName: "work/mtn-uganda",
 		title: "MTN",
 		company: "OnTheGrid",
 		thumbnail: mtnUganda_img1,
@@ -47,7 +47,7 @@ const GALLERY_DATA = [
 	},
 	{
 		id: 2,
-		routeName: "feeds/safaricom-digital-learning",
+		routeName: "work/safaricom-digital-learning",
 		title: "Safaricom",
 		company: "OnTheGrid",
 		thumbnail: safcomDigitalLearning_img1,
@@ -57,7 +57,7 @@ const GALLERY_DATA = [
 	},
 	{
 		id: 3,
-		routeName: "feeds/airtel-double-data",
+		routeName: "work/airtel-double-data",
 		title: "Airtel",
 		company: "OnTheGrid",
 		thumbnail: airtelDoubleData_img1,
@@ -67,7 +67,7 @@ const GALLERY_DATA = [
 	},
 	{
 		id: 4,
-		routeName: "feeds/toycar",
+		routeName: "work/toycar",
 		title: "ToyCar",
 		company: "OnTheGrid",
 		thumbnail: toycar_img1,
@@ -77,7 +77,7 @@ const GALLERY_DATA = [
 	},
 	{
 		id: 5,
-		routeName: "feeds/black",
+		routeName: "work/black",
 		title: "Black",
 		company: "OnTheGrid",
 		thumbnail: black_img1,
@@ -87,7 +87,7 @@ const GALLERY_DATA = [
 	},
 	{
 		id: 6,
-		routeName: "feeds/valon",
+		routeName: "work/valon",
 		title: "Valon Product shot",
 		company: "OnTheGrid",
 		thumbnail: valon_img1,
@@ -97,7 +97,7 @@ const GALLERY_DATA = [
 	},
 	{
 		id: 7,
-		routeName: "feeds/whiskey",
+		routeName: "work/whiskey",
 		title: "Whiskey",
 		company: "OnTheGrid",
 		thumbnail: whiskey_img1,
@@ -107,7 +107,7 @@ const GALLERY_DATA = [
 	},
 	{
 		id: 8,
-		routeName: "feeds/smirnoff",
+		routeName: "work/smirnoff",
 		title: "Smirnoff Apple Green",
 		company: "OnTheGrid",
 		thumbnail: smirnoff_img1,
@@ -117,7 +117,7 @@ const GALLERY_DATA = [
 	},
 	{
 		id: 9,
-		routeName: "feeds/fresh-iria",
+		routeName: "work/fresh-iria",
 		title: "Fresh Iria Milk",
 		company: "OnTheGrid",
 		thumbnail: iria_img1,
@@ -127,7 +127,7 @@ const GALLERY_DATA = [
 	},
 	{
 		id: 10,
-		routeName: "feeds/music",
+		routeName: "work/music",
 		title: "Music",
 		company: "OnTheGrid",
 		thumbnail: music_img1,
@@ -138,7 +138,7 @@ const GALLERY_DATA = [
 
 	{
 		id: 11,
-		routeName: "feeds/shade-of-grapes",
+		routeName: "work/shade-of-grapes",
 		title: "Shades of Grapes",
 		company: "OnTheGrid",
 		thumbnail: grapes_img1,
@@ -148,7 +148,7 @@ const GALLERY_DATA = [
 	},
 	{
 		id: 12,
-		routeName: "feeds/fresh-smoothies",
+		routeName: "work/fresh-smoothies",
 		title: "Fresh Smoothies",
 		company: "On The Grid",
 		thumbnail: smoothies_img1,
@@ -158,7 +158,7 @@ const GALLERY_DATA = [
 	},
 	{
 		id: 13,
-		routeName: "feeds/coca-cola",
+		routeName: "work/coca-cola",
 		title: "Coca cola bottle",
 		company: "On The Grid",
 		thumbnail: coca_cola_img1,
@@ -168,7 +168,7 @@ const GALLERY_DATA = [
 	},
 	{
 		id: 14,
-		routeName: "feeds/character-101",
+		routeName: "work/character-101",
 		title: "Character 101",
 		company: "On The Grid",
 		thumbnail: character_img1,
@@ -178,7 +178,7 @@ const GALLERY_DATA = [
 	},
 	{
 		id: 15,
-		routeName: "feeds/pride-lemon-fresh",
+		routeName: "work/pride-lemon-fresh",
 		title: "Pride Lemon Fresh",
 		company: "OnTheGrid",
 		thumbnail: pride_img1,

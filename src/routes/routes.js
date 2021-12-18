@@ -1,7 +1,7 @@
 import HomePage from "../pages/home.component";
 import WorkPage from "../pages/work.component";
 import AboutPage from "../pages/about.component";
-import ContactPage from "../pages/contact.component";
+import CareerPage from "../pages/career.component";
 
 const Routes = [
 	{
@@ -11,21 +11,21 @@ const Routes = [
 		exact: true,
 	},
 	{
-		path: "/feeds",
+		path: "/work",
 		component: WorkPage,
-		page_title: "Feeds",
+		page_title: "Work",
 		exact: false,
+	},
+	{
+		path: "/career",
+		component: CareerPage,
+		page_title: "Careers",
+		exact: true,
 	},
 	{
 		path: "/about",
 		component: AboutPage,
 		page_title: "About",
-		exact: true,
-	},
-	{
-		path: "/career",
-		component: ContactPage,
-		page_title: "Careers",
 		exact: true,
 	},
 ];

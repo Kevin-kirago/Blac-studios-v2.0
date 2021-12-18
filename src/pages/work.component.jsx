@@ -7,7 +7,7 @@ import ProjectOverview from "../components/project-overview.component";
 const WorkPage = ({ match }) => {
 	return (
 		<div className="archives">
-			<Route exact path="/feeds" component={ProjectCollections} />
+			<Route exact path="/work" component={ProjectCollections} />
 			<Route path={`${match.path}/:projectId`} component={ProjectOverview} />
 			<Modal />
 		</div>
