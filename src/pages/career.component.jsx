@@ -11,7 +11,7 @@ const CareerPage = () => {
 				</div>
 				<div className="content">
 					<h1 className="heading__primary">
-						You can join <span>OnTheGrid's</span> Recruiting Database!
+						You can join <span>OnTheGrid's</span> Artist Database!
 					</h1>
 					<p className="paragraph">
 						At OnTheGrid, we are always looking to expand our artist pool. Even if we do not have current openings, your information will
