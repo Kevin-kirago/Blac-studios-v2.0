@@ -13,18 +13,54 @@ import whiskey_img1 from "../../assets/products/whiskey.png";
 import iria_img1 from "../../assets/products/iria.png";
 import iria_img2 from "../../assets/products/Iria_fresh_milk01.png";
 import music_img1 from "../../assets/products/Music.jpg";
-import grapes_img1 from "../../assets/products/Shades_of_grapes.jpg";
-import grapes_img2 from "../../assets/products/Shades_of_grapes02.jpg";
 import smoothies_img1 from "../../assets/products/Fresh_smoothies.png";
 import smoothies_img2 from "../../assets/products/Fresh_smoothies02.png";
 import coca_cola_img1 from "../../assets/products/Coca-cola_Bottle.png";
 import coca_cola_img2 from "../../assets/products/Coca-cola_Bottle02.png";
-import character_img1 from "../../assets/products/character101.jpg";
-import character_img2 from "../../assets/products/Character101-2.jpg";
 import pride_img1 from "../../assets/products/Pride_Lemon_Fresh.jpg";
 import pride_img2 from "../../assets/products/Pride_Lemon_Fresh_ClayRender.jpg";
 
 const GALLERY_DATA = [
+    {
+        id: 3,
+        routeName: "work/psi",
+        title: "PSI | Love Shouldn't Hurt |",
+        company: "OnTheGrid",
+        thumbnail:
+            "https://i.vimeocdn.com/video/1497872088-ecdfb507d9515aba82e4bb6b5114086398d472be6792b8e3df09b0f6af06b83e-d_640x360",
+        reel: "https://player.vimeo.com/video/744588607?h=9331330f52",
+        gallery: [
+            "https://i.vimeocdn.com/video/1497872088-ecdfb507d9515aba82e4bb6b5114086398d472be6792b8e3df09b0f6af06b83e-d_640x360",
+        ],
+        credits: null,
+    },
+
+    {
+        id: 18,
+        routeName: "work/chaguo",
+        title: "Chagua Trailer",
+        company: "OnTheGrid",
+        thumbnail:
+            "https://i.vimeocdn.com/video/1547000620-710ecfa260e9a2fb4bbe7a00afaedc9cc0c061b9ec65d738fafd1172c3c1c482-d_640x360",
+        reel: "https://player.vimeo.com/video/722841576?h=109d2f1106",
+        gallery: [
+            "https://i.vimeocdn.com/video/1547000620-710ecfa260e9a2fb4bbe7a00afaedc9cc0c061b9ec65d738fafd1172c3c1c482-d_640x360",
+        ],
+        credits: null,
+    },
+    {
+        id: 23,
+        routeName: "work/crime-and-justice",
+        title: "Crime And Justice S02 | Title Sequencer",
+        company: "OnTheGrid",
+        thumbnail:
+            "https://i.vimeocdn.com/video/1421983473-e7dd30f7c6bf4cdddf8ad27b0e1a40215084208af48b990cd4c68bf7dc4892b5-d_640x360",
+        reel: "https://player.vimeo.com/video/704097200?h=70312ea33d",
+        gallery: [
+            "https://i.vimeocdn.com/video/1421983473-e7dd30f7c6bf4cdddf8ad27b0e1a40215084208af48b990cd4c68bf7dc4892b5-d_640x360",
+        ],
+        credits: null,
+    },
     {
         id: 0,
         routeName: "work/lipa-mdogo-mdogo",
@@ -54,7 +90,7 @@ const GALLERY_DATA = [
     {
         id: 2,
         routeName: "work/selfie",
-        title: "Chukua Selfie",
+        title: "Chukua Selfie - EJAF - TV ANIMATION SPOT",
         company: "OnTheGrid",
         thumbnail:
             "https://i.vimeocdn.com/video/1037610198-c24786e9a3ee88c95385c273b2291a9f061d26d27b523538465c1685710b75a6-d_640x360",
@@ -65,16 +101,46 @@ const GALLERY_DATA = [
         credits: null,
     },
     {
-        id: 3,
-        routeName: "work/psi",
-        title: "PSI | Love Shouldn't Hurt |",
+        id: 7,
+        routeName: "work/nestle-cerevita",
+        title: "Cerevita New Pack Endframe",
+        company: "OnTheGrid",
+        thumbnail: nestleCerevita_img1,
+        reel: "https://player.vimeo.com/video/474557862?color=ffc300&title=0&byline=0&portrait=0",
+        gallery: [nestleCerevita_img1],
+        credits: null,
+    },
+    {
+        id: 8,
+        routeName: "work/mtn-uganda",
+        title: "MTN | Momo Nyabo |",
+        company: "OnTheGrid",
+        thumbnail: mtnUganda_img1,
+        reel: "https://player.vimeo.com/video/468443755?color=ffc300&title=0&byline=0&portrait=0",
+        gallery: [mtnUganda_img1],
+        credits: null,
+    },
+    {
+        id: 5,
+        routeName: "work/shell",
+        title: "Shell_TVC",
         company: "OnTheGrid",
         thumbnail:
-            "https://i.vimeocdn.com/video/1497872088-ecdfb507d9515aba82e4bb6b5114086398d472be6792b8e3df09b0f6af06b83e-d_640x360",
-        reel: "https://player.vimeo.com/video/744588607?h=9331330f52",
+            "https://i.vimeocdn.com/video/953456145-a4284c1b845c185be46c5175883d2de2ae29d74a527c8ffff644e112eae3225f-d_640x360",
+        reel: "https://player.vimeo.com/video/455570287?h=f62185fb10",
         gallery: [
-            "https://i.vimeocdn.com/video/1497872088-ecdfb507d9515aba82e4bb6b5114086398d472be6792b8e3df09b0f6af06b83e-d_640x360",
+            "https://i.vimeocdn.com/video/953456145-a4284c1b845c185be46c5175883d2de2ae29d74a527c8ffff644e112eae3225f-d_640x360",
         ],
+        credits: null,
+    },
+    {
+        id: 9,
+        routeName: "work/safaricom-digital-learning",
+        title: "Safaricom | Digital Learning |",
+        company: "OnTheGrid",
+        thumbnail: safcomDigitalLearning_img1,
+        reel: "https://player.vimeo.com/video/453920163?color=ffc300&title=0&byline=0&portrait=0",
+        gallery: [safcomDigitalLearning_img1],
         credits: null,
     },
     {
@@ -91,66 +157,97 @@ const GALLERY_DATA = [
         credits: null,
     },
     {
-        id: 5,
-        routeName: "work/shell",
-        title: "Shell_TVC",
-        company: "OnTheGrid",
-        thumbnail:
-            "https://i.vimeocdn.com/video/953456145-a4284c1b845c185be46c5175883d2de2ae29d74a527c8ffff644e112eae3225f-d_640x360",
-        reel: "https://player.vimeo.com/video/455570287?h=f62185fb10",
-        gallery: [
-            "https://i.vimeocdn.com/video/953456145-a4284c1b845c185be46c5175883d2de2ae29d74a527c8ffff644e112eae3225f-d_640x360",
-        ],
-        credits: null,
-    },
-
-    {
         id: 6,
         routeName: "work/double-data",
-        title: "Airtel Double Data",
+        title: "Airtel | Double Data |",
         company: "OnTheGrid",
         thumbnail:
             "https://i.vimeocdn.com/video/953443569-6ce4030bcdbc00a218f98411b8dceedba12b6373bf4eb2527c3b2b2c09912838-d_640x360",
-        reel: "https://player.vimeo.com/video/768689270?h=1775d48f49",
+        reel: "https://player.vimeo.com/video/453916020?h=5e0e27f40c",
         gallery: [
             "https://i.vimeocdn.com/video/953443569-6ce4030bcdbc00a218f98411b8dceedba12b6373bf4eb2527c3b2b2c09912838-d_640x360",
         ],
         credits: null,
     },
     {
-        id: 7,
-        routeName: "work/nestle-cerevita",
-        title: "Nestle Cerevita",
-        company: "OnTheGrid",
-        thumbnail: nestleCerevita_img1,
-        reel: "https://player.vimeo.com/video/474557862?color=ffc300&title=0&byline=0&portrait=0",
-        gallery: [nestleCerevita_img1],
+        id: 21,
+        routeName: "work/smart-value",
+        title: "Airtel | Smartvalue 2Bob Kinetic |",
+        company: "On The Grid",
+        thumbnail:
+            "https://i.vimeocdn.com/video/851860567-3256d78404f4d929b6d7a4ff4d23b71e778bbfbc2a9f15b41fe78e74023d83d4-d_640x360",
+        reel: "https://player.vimeo.com/video/388555929?h=74f2f6ba69",
+        gallery: [
+            "https://i.vimeocdn.com/video/851860567-3256d78404f4d929b6d7a4ff4d23b71e778bbfbc2a9f15b41fe78e74023d83d4-d_640x360",
+        ],
         credits: null,
     },
     {
-        id: 8,
-        routeName: "work/mtn-uganda",
-        title: "MTN",
+        id: 24,
+        routeName: "work/pesalink",
+        title: "PesaLink Tuliaa on TVC",
         company: "OnTheGrid",
-        thumbnail: mtnUganda_img1,
-        reel: "https://player.vimeo.com/video/468443755?color=ffc300&title=0&byline=0&portrait=0",
-        gallery: [mtnUganda_img1],
+        thumbnail:
+            "https://i.vimeocdn.com/video/812343616-61f799eb62d544ad0892412d57cde5db8284f8b1a5aa0c0699c5c256f2f81d9f-d_640x360",
+        reel: "https://player.vimeo.com/video/358651015?h=9c83d2e595",
+        gallery: [
+            "https://i.vimeocdn.com/video/812343616-61f799eb62d544ad0892412d57cde5db8284f8b1a5aa0c0699c5c256f2f81d9f-d_640x360",
+        ],
         credits: null,
     },
     {
-        id: 9,
-        routeName: "work/safaricom-digital-learning",
-        title: "Safaricom | Digital Learning |",
+        id: 25,
+        routeName: "work/mtn-bussiness",
+        title: "MTN | Bussiness TVC |",
         company: "OnTheGrid",
-        thumbnail: safcomDigitalLearning_img1,
-        reel: "https://player.vimeo.com/video/453920163?color=ffc300&title=0&byline=0&portrait=0",
-        gallery: [safcomDigitalLearning_img1],
+        thumbnail:
+            "https://i.vimeocdn.com/video/812335916-54dab08e9a9333f52892f3c25fbe109a34c639a7f800a47ff3916514dc824c0e-d_640x360",
+        reel: "https://player.vimeo.com/video/358645378?h=cb8f3b061f",
+        gallery: [
+            "https://i.vimeocdn.com/video/812335916-54dab08e9a9333f52892f3c25fbe109a34c639a7f800a47ff3916514dc824c0e-d_640x360",
+        ],
+        credits: null,
+    },
+    {
+        id: 26,
+        routeName: "work/nile",
+        title: "Nile Special beer TVC-Uganda Cranes for Afcon 2019",
+        company: "OnTheGrid",
+        thumbnail:
+            "https://i.vimeocdn.com/video/812328491-7dc9a3e255205bb6a65049f175a41deed26e975d2f3bb22ad5251cd48c052005-d_640x360",
+        reel: "https://player.vimeo.com/video/358046896?h=6285619e17",
+        gallery: [
+            "https://i.vimeocdn.com/video/812328491-7dc9a3e255205bb6a65049f175a41deed26e975d2f3bb22ad5251cd48c052005-d_640x360",
+        ],
+        credits: null,
+    },
+    {
+        id: 16,
+        routeName: "work/fresh-iria",
+        title: "Fresh Iria Milk",
+        company: "OnTheGrid",
+        thumbnail: iria_img1,
+        reel: "https://player.vimeo.com/video/339977229?color=ffc300&title=0&byline=0&portrait=0",
+        gallery: [iria_img1, iria_img2],
+        credits: null,
+    },
+    {
+        id: 27,
+        routeName: "work/statistics",
+        title: "STATISTICS - Shaping the Future of Education & Work",
+        company: "OnTheGrid",
+        thumbnail:
+            "https://i.vimeocdn.com/video/788169935-a0430ee142b67edcd4748a5d2a7e5cb274b86c273632d6077defefd8af777ca8-d_640x360",
+        reel: "https://player.vimeo.com/video/339964134?h=bfe7f693de",
+        gallery: [
+            "https://i.vimeocdn.com/video/788169935-a0430ee142b67edcd4748a5d2a7e5cb274b86c273632d6077defefd8af777ca8-d_640x360",
+        ],
         credits: null,
     },
     {
         id: 10,
         routeName: "work/airtel-double-data",
-        title: "Airtel",
+        title: "Airtel | Double Data |",
         company: "OnTheGrid",
         thumbnail: airtelDoubleData_img1,
         reel: null,
@@ -208,16 +305,6 @@ const GALLERY_DATA = [
         credits: null,
     },
     {
-        id: 16,
-        routeName: "work/fresh-iria",
-        title: "Fresh Iria Milk",
-        company: "OnTheGrid",
-        thumbnail: iria_img1,
-        reel: "https://player.vimeo.com/video/339977229?color=ffc300&title=0&byline=0&portrait=0",
-        gallery: [iria_img1, iria_img2],
-        credits: null,
-    },
-    {
         id: 17,
         routeName: "work/music",
         title: "Music",
@@ -228,16 +315,6 @@ const GALLERY_DATA = [
         credits: null,
     },
 
-    {
-        id: 18,
-        routeName: "work/shade-of-grapes",
-        title: "Shades of Grapes",
-        company: "OnTheGrid",
-        thumbnail: grapes_img1,
-        reel: null,
-        gallery: [grapes_img1, grapes_img2],
-        credits: null,
-    },
     {
         id: 19,
         routeName: "work/fresh-smoothies",
@@ -258,16 +335,7 @@ const GALLERY_DATA = [
         gallery: [coca_cola_img1, coca_cola_img2],
         credits: null,
     },
-    {
-        id: 21,
-        routeName: "work/character-101",
-        title: "Character 101",
-        company: "On The Grid",
-        thumbnail: character_img1,
-        reel: null,
-        gallery: [character_img1, character_img2],
-        credits: null,
-    },
+
     {
         id: 22,
         routeName: "work/pride-lemon-fresh",
