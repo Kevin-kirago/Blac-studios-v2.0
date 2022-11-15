@@ -1,6 +1,4 @@
 import safcomDigitalLearning_img1 from "../../assets/products/Safaricom_Digital_Learning.png";
-import mtnUganda_img1 from "../../assets/products/MTN_UGANDA_Momo_Nyabo.png";
-import nestleCerevita_img1 from "../../assets/products/Nestle_Cerevita_New_Satchet.png";
 import airtelDoubleData_img1 from "../../assets/products/Airtel_Double_Data.png";
 import toycar_img1 from "../../assets/products/toyCar.jpg";
 import toycar_img2 from "../../assets/products/toyCar-2.jpg";
@@ -105,9 +103,12 @@ const GALLERY_DATA = [
         routeName: "work/nestle-cerevita",
         title: "Cerevita New Pack Endframe",
         company: "OnTheGrid",
-        thumbnail: nestleCerevita_img1,
+        thumbnail:
+            "https://i.vimeocdn.com/video/986619770-1a5c4d92aaf632b1db14f2d7356bf0ad02fe9e4d1cb87821107239c7961b0b27-d_640x360",
         reel: "https://player.vimeo.com/video/474557862?color=ffc300&title=0&byline=0&portrait=0",
-        gallery: [nestleCerevita_img1],
+        gallery: [
+            "https://i.vimeocdn.com/video/986619770-1a5c4d92aaf632b1db14f2d7356bf0ad02fe9e4d1cb87821107239c7961b0b27-d_640x360",
+        ],
         credits: null,
     },
     {
@@ -115,9 +116,12 @@ const GALLERY_DATA = [
         routeName: "work/mtn-uganda",
         title: "MTN | Momo Nyabo |",
         company: "OnTheGrid",
-        thumbnail: mtnUganda_img1,
+        thumbnail:
+            "https://i.vimeocdn.com/video/975568534-f1a71ba0bfb8602676eb97b8afd53e0f1f20989184683bd58528506b87429f49-d_640x360",
         reel: "https://player.vimeo.com/video/468443755?color=ffc300&title=0&byline=0&portrait=0",
-        gallery: [mtnUganda_img1],
+        gallery: [
+            "https://i.vimeocdn.com/video/975568534-f1a71ba0bfb8602676eb97b8afd53e0f1f20989184683bd58528506b87429f49-d_640x360",
+        ],
         credits: null,
     },
     {
@@ -226,7 +230,8 @@ const GALLERY_DATA = [
         routeName: "work/fresh-iria",
         title: "Fresh Iria Milk",
         company: "OnTheGrid",
-        thumbnail: iria_img1,
+        thumbnail:
+            "https://i.vimeocdn.com/video/788175060-2e7daa35051d6507d7aa7f6881ccd1bf44469737f0760b7bb1eacd56116b944f-d_640x360",
         reel: "https://player.vimeo.com/video/339977229?color=ffc300&title=0&byline=0&portrait=0",
         gallery: [iria_img1, iria_img2],
         credits: null,
