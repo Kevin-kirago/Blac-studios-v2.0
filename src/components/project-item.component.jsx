@@ -12,7 +12,7 @@ const ProjectItem = (props) => {
 
     return (
         <div className="project__item">
-            <div className="project__item--thumbnailImgContainer">
+            <div className="project__item--container">
                 <img
                     className="img__thumbnail"
                     src={thumbnail}
@@ -41,10 +41,9 @@ const ProjectItem = (props) => {
                         </svg>
                     </span>
                 </div>
-            </div>
-            <div className="project__item--title">
-                <span className="title">{title}</span>
-                {/* <span className="company">{company}</span> */}
+                <div className="item__title">
+                    <span className="title">{title}</span>
+                </div>
             </div>
         </div>
     );

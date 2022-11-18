@@ -1,143 +1,136 @@
 .project__item {
-	position: relative;
-	display: grid;
-	grid-row-gap: 0.5rem;
-	overflow: hidden;
+    position: relative;
+    display: grid;
+    grid-row-gap: 0.5rem;
+    overflow: hidden;
 
-	&--thumbnailImgContainer {
-		position: relative;
-		cursor: pointer;
-		height: 25rem;
+    &--container {
+        position: relative;
+        cursor: pointer;
+        height: 25rem;
 
-		@include media("<=tablet") {
-			height: 25vw;
-		}
+        @include media("<=tablet") {
+            height: 25vw;
+        }
 
-		@include media(">1100px", "<laptop") {
-			height: 17rem;
-		}
+        @include media(">1100px", "<laptop") {
+            height: 17rem;
+        }
 
-		@include media(">=laptop", "<1300px") {
-			height: 19rem;
-		}
+        @include media(">=laptop", "<1300px") {
+            height: 19rem;
+        }
 
-		@include media(">=1300px", "<desktop") {
-			height: 22rem;
-		}
+        @include media(">=1300px", "<desktop") {
+            height: 22rem;
+        }
 
-		@include media(">=LGdesktop") {
-			height: 25rem;
-		}
+        @include media(">=LGdesktop") {
+            height: 25rem;
+        }
 
-		.img__thumbnail {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: bottom;
-			transition: all 0.3s ease;
-		}
+        .item__title {
+            position: absolute;
+            letter-spacing: 0.05rem;
+            display: block;
+            top: 1rem;
+            left: 1rem;
+            width: 100%;
+            height: 4rem;
+            opacity: 0;
+            transition: all 0.3s ease;
+            font-family: $font-body;
 
-		.icon {
-			&__set {
-				position: absolute;
-				bottom: 1.5rem;
-				right: 1.5rem;
-				display: grid;
-				grid-row-gap: 1rem;
-				opacity: 0;
-				transition: all 0.3s ease;
+            @include media("<=phone") {
+                height: 3rem;
+            }
 
-				@include media("<phone") {
-					display: none;
-				}
-			}
+            .title {
+                font-weight: 500;
+                color: #ffffff;
+                font-size: 1.4rem;
 
-			&__holder {
-				display: grid;
-				grid-template-columns: auto 2.5rem;
-				align-content: center;
-				grid-column-gap: 1.5rem;
-				justify-items: end;
-				transition: all 0.3s ease;
+                @include media("<=450px") {
+                    font-size: 1.1rem;
+                }
+            }
+        }
 
-				svg {
-					display: inline-block;
-					height: 2.5rem;
-					width: 2.5rem;
-					fill: #bbb;
-				}
+        .img__thumbnail {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom;
+            transition: all 0.3s ease;
+        }
 
-				.svg-gallery {
-					height: 2.7rem;
-					width: 2.7rem;
-				}
+        .icon {
+            &__set {
+                position: absolute;
+                bottom: 1.5rem;
+                right: 1.5rem;
+                display: grid;
+                grid-row-gap: 1rem;
+                opacity: 0;
+                transition: all 0.3s ease;
 
-				&:hover {
-					svg {
-						fill: #fff;
-					}
+                @include media("<phone") {
+                    display: none;
+                }
+            }
 
-					.icon__holder--text {
-						color: #fff;
-						opacity: 1;
-						align-self: center;
-					}
-				}
+            &__holder {
+                display: grid;
+                grid-template-columns: auto 2.5rem;
+                align-content: center;
+                grid-column-gap: 1.5rem;
+                justify-items: end;
+                transition: all 0.3s ease;
 
-				&--text {
-					font-size: 1.3rem;
-					opacity: 0;
-					transition: all 0.3s ease;
-				}
-			}
-		}
-	}
+                svg {
+                    display: inline-block;
+                    height: 2.5rem;
+                    width: 2.5rem;
+                    fill: #bbb;
+                }
 
-	&--title {
-		position: relative;
-		letter-spacing: 0.05rem;
-		display: grid;
-		width: 100%;
-		height: 4rem;
+                .svg-gallery {
+                    height: 2.7rem;
+                    width: 2.7rem;
+                }
 
-		font-family: $font-body;
+                &:hover {
+                    svg {
+                        fill: #fff;
+                    }
 
-		@include media("<=phone") {
-			height: 3rem;
-		}
+                    .icon__holder--text {
+                        color: #fff;
+                        opacity: 1;
+                        align-self: center;
+                    }
+                }
 
-		.title {
-			font-weight: 500;
-			color: $primary-grey;
-			font-size: 1.4rem;
+                &--text {
+                    font-size: 1.3rem;
+                    opacity: 0;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
 
-			@include media("<=450px") {
-				font-size: 1.1rem;
-			}
-		}
+    &:hover {
+        .img__thumbnail {
+            filter: brightness(25%);
+        }
 
-		.company {
-			color: #fff;
-			font-weight: 600;
-			font-size: 1.5rem;
+        .icon__set {
+            opacity: 1;
+        }
 
-			@include media(">450px", "<=phone") {
-				font-size: 1.3rem;
-			}
-
-			@include media("<=450px") {
-				font-size: 1rem;
-			}
-		}
-	}
-
-	&:hover {
-		.img__thumbnail {
-			filter: brightness(50%);
-		}
-
-		.icon__set {
-			opacity: 1;
-		}
-	}
+        .item__title {
+            opacity: 1;
+        }
+    }
 }

@@ -1,4 +1,3 @@
-import safcomDigitalLearning_img1 from "../../assets/products/Safaricom_Digital_Learning.png";
 import airtelDoubleData_img1 from "../../assets/products/Airtel_Double_Data.png";
 import toycar_img1 from "../../assets/products/toyCar.jpg";
 import toycar_img2 from "../../assets/products/toyCar-2.jpg";
@@ -19,6 +18,19 @@ import pride_img1 from "../../assets/products/Pride_Lemon_Fresh.jpg";
 import pride_img2 from "../../assets/products/Pride_Lemon_Fresh_ClayRender.jpg";
 
 const GALLERY_DATA = [
+    {
+        id: 28,
+        routeName: "work/jw-tvc",
+        title: "JW TVC",
+        company: "OnTheGrid",
+        thumbnail:
+            "https://i.vimeocdn.com/video/1546910454-ef4954627b610752e239c04d103efe7347677fe6ebc8929cc5807effdde62e6f-d_640x360",
+        reel: "https://player.vimeo.com/video/770676361?h=87d546f8bc",
+        gallery: [
+            "https://i.vimeocdn.com/video/1546910454-ef4954627b610752e239c04d103efe7347677fe6ebc8929cc5807effdde62e6f-d_640x360",
+        ],
+        credits: null,
+    },
     {
         id: 3,
         routeName: "work/psi",
@@ -142,9 +154,12 @@ const GALLERY_DATA = [
         routeName: "work/safaricom-digital-learning",
         title: "Safaricom | Digital Learning |",
         company: "OnTheGrid",
-        thumbnail: safcomDigitalLearning_img1,
+        thumbnail:
+            "https://i.vimeocdn.com/video/950559443-6359831ec6890264db41e07daa170710d73d1a8d7d7d46b33b393476565059bf-d_640x360",
         reel: "https://player.vimeo.com/video/453920163?color=ffc300&title=0&byline=0&portrait=0",
-        gallery: [safcomDigitalLearning_img1],
+        gallery: [
+            "https://i.vimeocdn.com/video/950559443-6359831ec6890264db41e07daa170710d73d1a8d7d7d46b33b393476565059bf-d_640x360",
+        ],
         credits: null,
     },
     {
