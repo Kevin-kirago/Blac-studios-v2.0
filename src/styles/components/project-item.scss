@@ -33,8 +33,9 @@
             position: absolute;
             letter-spacing: 0.05rem;
             display: block;
-            top: 1rem;
-            left: 1rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 100%;
             height: 4rem;
             opacity: 0;
@@ -49,6 +50,7 @@
                 font-weight: 500;
                 color: #ffffff;
                 font-size: 1.4rem;
+                text-align: center;
 
                 @include media("<=450px") {
                     font-size: 1.1rem;

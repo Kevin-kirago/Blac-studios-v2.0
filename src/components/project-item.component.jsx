@@ -30,19 +30,20 @@ const ProjectItem = (props) => {
                                 <use href={sprites + "#play-icon"}></use>
                             </svg>
                         </span>
-                    ) : null}
-                    <span
-                        className="icon__holder"
-                        onClick={() => history.push(`${routeName}`)}
-                    >
-                        <span className="icon__holder--text">Explore</span>
-                        <svg className="svg-gallery">
-                            <use href={sprites + "#gallery-icon"}></use>
-                        </svg>
-                    </span>
+                    ) : (
+                        <span
+                            className="icon__holder"
+                            onClick={() => history.push(`${routeName}`)}
+                        >
+                            <span className="icon__holder--text">Explore</span>
+                            <svg className="svg-gallery">
+                                <use href={sprites + "#gallery-icon"}></use>
+                            </svg>
+                        </span>
+                    )}
                 </div>
                 <div className="item__title">
-                    <span className="title">{title}</span>
+                    <p className="title">{title}</p>
                 </div>
             </div>
         </div>
