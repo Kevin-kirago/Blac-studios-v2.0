@@ -1,152 +1,154 @@
 .navigation {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
 
-	&__wrapper {
-		position: relative;
-		height: 10rem;
-		width: 100%;
-		padding: 0 4rem;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+    &__wrapper {
+        position: relative;
+        height: 10rem;
+        width: 100%;
+        padding: 0 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-		@include media("<=phone") {
-			padding: 0 2rem;
-			height: 7rem;
-		}
-	}
+        @include media("<=phone") {
+            padding: 0 2rem;
+            height: 7rem;
+        }
+    }
 
-	&__logo {
-		position: relative;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		cursor: pointer;
+    &__logo {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
 
-		svg {
-			display: inline-block;
-			height: 6rem;
-			width: 6rem;
-			box-sizing: border-box;
+        svg {
+            display: inline-block;
+            height: 6rem;
+            width: 6rem;
+            box-sizing: border-box;
 
-			@include media("<=phone") {
-				height: 5rem;
-				width: 5rem;
-			}
-		}
-	}
+            @include media("<=phone") {
+                height: 5rem;
+                width: 5rem;
+            }
+        }
+    }
 
-	&__menu {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		justify-self: flex-end;
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-self: flex-end;
 
-		svg {
-			display: inline-block;
-			fill: $primary-yellow;
-			height: 3rem;
-			width: 3rem;
-			cursor: pointer;
-		}
-	}
+        svg {
+            display: inline-block;
+            fill: $primary-yellow;
+            height: 3rem;
+            width: 3rem;
+            cursor: pointer;
+        }
+    }
 
-	&__drawer {
-		position: fixed;
-		top: 0;
-		right: 0;
-		width: 100%;
-		height: 100%;
-		background-color: #000;
-		z-index: 2;
-		padding: 0 4rem;
-		overflow: hidden;
+    &__drawer {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        z-index: 2;
+        padding: 0 4rem;
+        overflow: hidden;
 
-		display: grid;
-		grid-template-rows: 10rem 1fr 10rem;
-		transform: translateY(-100%);
+        display: grid;
+        grid-template-rows: 10rem 1fr 10rem;
+        transform: translateY(-100%);
 
-		@include media("<=phone") {
-			grid-template-rows: 7rem 1fr 7rem;
-			padding: 0 2rem;
-		}
-	}
+        @include media("<=phone") {
+            grid-template-rows: 7rem 1fr 7rem;
+            padding: 0 2rem;
+        }
+    }
 
-	&__header {
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
 
-		svg {
-			display: inline-block;
-			fill: $primary-yellow;
-			height: 3rem;
-			width: 3rem;
-			cursor: pointer;
+        svg {
+            display: inline-block;
+            fill: $primary-yellow;
+            height: 3rem;
+            width: 3rem;
+            cursor: pointer;
 
-			@include media("<=phone") {
-				height: 2.5rem;
-				width: 2.5rem;
-			}
-		}
-	}
+            @include media("<=phone") {
+                height: 2.5rem;
+                width: 2.5rem;
+            }
+        }
+    }
 
-	&__main {
-		display: grid;
-		padding: 0 4rem;
+    &__main {
+        display: grid;
+        padding: 0 4rem;
 
-		&--list {
-			position: relative;
-			list-style: none;
-			align-self: center;
+        &--list {
+            position: relative;
+            list-style: none;
+            align-self: center;
 
-			display: grid;
-			grid-row-gap: 2rem;
+            display: grid;
+            grid-row-gap: 2rem;
 
-			@include media("<=tablet") {
-				justify-items: center;
-			}
+            @include media("<=tablet") {
+                justify-items: center;
+            }
 
-			@include media("<=phone") {
-				grid-row-gap: 1rem;
-			}
-		}
+            @include media("<=phone") {
+                grid-row-gap: 1rem;
+            }
+        }
 
-		&--item {
-			position: relative;
-			font-size: 13rem;
-			font-weight: 900;
-			line-height: 1;
+        &--item {
+            position: relative;
+            font-size: 13rem;
+            display: flex;
+            justify-content: center;
+            font-weight: 900;
+            line-height: 1;
 
-			@include media(">phone", "<=tablet") {
-				font-size: 9rem;
-			}
+            @include media(">phone", "<=tablet") {
+                font-size: 9rem;
+            }
 
-			@include media(">500px", "<=phone") {
-				font-size: 7rem;
-			}
+            @include media(">500px", "<=phone") {
+                font-size: 7rem;
+            }
 
-			@include media("<=500px") {
-				font-size: 5rem;
-			}
+            @include media("<=500px") {
+                font-size: 5rem;
+            }
 
-			&-link {
-				display: inline-block;
-				text-transform: uppercase;
-				text-decoration: none;
-				color: #ffc300;
-				opacity: 0;
-			}
-		}
-	}
+            &-link {
+                display: inline-block;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #ffc300;
+                opacity: 0;
+            }
+        }
+    }
 
-	&__footer {
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
-	}
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
 }
