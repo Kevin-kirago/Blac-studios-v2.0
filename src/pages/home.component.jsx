@@ -1,5 +1,5 @@
 import React from "react";
-import homepageVideo from "../assets/reel.mp4";
+import homepageVideo from "../assets/Reel.mp4";
 
 const HomePage = () => {
     return (
