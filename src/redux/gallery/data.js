@@ -19,6 +19,19 @@ import pride_img2 from "../../assets/products/Pride_Lemon_Fresh_ClayRender.jpg";
 
 const GALLERY_DATA = [
     {
+        id: 29,
+        routeName: "work/lato-tvc",
+        title: "LATO FORTIFIED MILK POWDER TVC",
+        company: "BlacBallStudios",
+        thumbnail:
+            "https://i.vimeocdn.com/video/1675017800-45904a4fa7f8fa78ab5b254d8585273a5f7073519fe800b0cd2c13a6764f507b-d_640x360",
+        reel: "https://player.vimeo.com/video/830112531?h=dd5e396815",
+        gallery: [
+            "https://i.vimeocdn.com/video/1675017800-45904a4fa7f8fa78ab5b254d8585273a5f7073519fe800b0cd2c13a6764f507b-d_640x360",
+        ],
+        credits: null,
+    },
+    {
         id: 28,
         routeName: "work/jw-tvc",
         title: "Johnnie Walker 'The Walkers' TVC",
