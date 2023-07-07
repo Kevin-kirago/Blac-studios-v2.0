@@ -1,196 +1,196 @@
 .about {
-	position: relative;
-	width: 136.8rem;
-	margin: 0 auto;
-	min-height: 75rem;
+    position: relative;
+    width: 136.8rem;
+    margin: 0 auto;
+    min-height: 75rem;
 
-	@include media(">LGdesktop") {
-		width: 144rem;
-	}
+    @include media(">LGdesktop") {
+        width: 144rem;
+    }
 
-	@include media("<desktop") {
-		width: 100%;
-	}
+    @include media("<desktop") {
+        width: 100%;
+    }
 
-	@include media(">1300px", "<desktop") {
-		padding: 0 10rem;
-	}
+    @include media(">1300px", "<desktop") {
+        padding: 0 10rem;
+    }
 
-	@include media(">1000px", "<1300px") {
-		padding: 0 7rem;
-	}
+    @include media(">1000px", "<1300px") {
+        padding: 0 7rem;
+    }
 
-	@include media(">phone", "<1000px") {
-		padding: 0 4rem;
-	}
+    @include media(">phone", "<1000px") {
+        padding: 0 4rem;
+    }
 
-	@include media("<=phone") {
-		padding: 0 2rem;
-	}
+    @include media("<=phone") {
+        padding: 0 2rem;
+    }
 
-	&__content {
-		padding: 15rem 0;
+    &__content {
+        padding: 15rem 0;
 
-		@include media("<1300px") {
-			padding: 12rem 0;
-		}
+        @include media("<1300px") {
+            padding: 12rem 0;
+        }
 
-		@include media("<phone") {
-			padding: 10rem 0;
-		}
-	}
+        @include media("<phone") {
+            padding: 10rem 0;
+        }
+    }
 
-	&__story {
-		display: grid;
-		grid-template-columns: 1fr 2fr;
-		min-height: 50rem;
+    &__story {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        min-height: 50rem;
 
-		@include media("<=phone") {
-			min-height: 55rem;
-			grid-template-columns: 1fr;
-			grid-template-rows: min-content auto;
-			grid-row-gap: 3rem;
-		}
-	}
+        @include media("<=phone") {
+            min-height: 55rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: min-content auto;
+            grid-row-gap: 3rem;
+        }
+    }
 
-	&__studio {
-		position: relative;
-		width: 100%;
-		height: 65rem;
-		margin-bottom: 10rem;
+    &__studio {
+        position: relative;
+        width: 100%;
+        height: 65rem;
+        margin-bottom: 10rem;
 
-		@include media("<laptop") {
-			height: 45rem;
-		}
+        @include media("<laptop") {
+            height: 45rem;
+        }
 
-		@include media("<phone") {
-			height: 20rem;
-			margin-bottom: 5rem;
-		}
+        @include media("<phone") {
+            height: 20rem;
+            margin-bottom: 5rem;
+        }
 
-		video {
-			display: block;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-	}
+        video {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 
-	&__feature {
-		display: grid;
-		grid-template-columns: 1fr 2fr;
-		padding: 10rem;
+    &__feature {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 10rem;
 
-		@include media("<=phone") {
-			padding: 2rem;
-			grid-template-columns: 1fr;
-			grid-template-rows: min-content auto;
-			grid-row-gap: 3rem;
-		}
-	}
+        @include media("<=phone") {
+            padding: 2rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: min-content auto;
+            grid-row-gap: 3rem;
+        }
+    }
 
-	&__clients {
-		display: grid;
-		grid-template-columns: 1fr 2fr;
-		padding: 10rem;
-		grid-row-gap: 10rem;
+    &__clients {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 10rem;
+        grid-row-gap: 10rem;
 
-		@include media("<=phone") {
-			padding: 2rem;
-			grid-template-columns: 1fr;
-			grid-template-rows: min-content auto;
-			grid-row-gap: 3rem;
-		}
+        @include media("<=phone") {
+            padding: 2rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: min-content auto;
+            grid-row-gap: 3rem;
+        }
 
-		.logo {
-			grid-column: 1 / -1;
+        .logo {
+            grid-column: 1 / -1;
 
-			display: grid;
-			grid-template-columns: repeat(4, 1fr);
-			grid-row-gap: 2rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-row-gap: 2rem;
 
-			@include media("<phone") {
-				grid-template-columns: repeat(3, 1fr);
-			}
+            @include media("<phone") {
+                grid-template-columns: repeat(3, 1fr);
+            }
 
-			&__container {
-				display: flex;
-				justify-content: center;
-				align-items: center;
+            &__container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-				svg {
-					display: inline-block;
-					fill: #888;
-					transition: all 0.4s ease-in-out;
-					cursor: pointer;
+                svg {
+                    display: inline-block;
+                    fill: #888;
+                    transition: all 0.4s ease-in-out;
+                    cursor: pointer;
 
-					@include media("<phone") {
-						height: 6rem;
-						width: 6rem;
-					}
+                    @include media("<phone") {
+                        height: 6rem;
+                        width: 6rem;
+                    }
 
-					&:hover {
-						fill: #ffc300;
-					}
-				}
-			}
-		}
-	}
+                    &:hover {
+                        fill: #ffc300;
+                    }
+                }
+            }
+        }
+    }
 
-	&__cta {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 10rem;
-	}
+    &__cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10rem;
+    }
 }
 
 .nav {
-	list-style: none;
-	display: flex;
-	flex-direction: column;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
 
-	&-item {
-		position: relative;
-		display: inline-block;
-		font-size: 1.5rem;
-		font-weight: 400;
-		color: #ffc300;
+    &-item {
+        position: relative;
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #ffc300;
 
-		@include media("<1300px") {
-			font-size: 1.3rem;
-		}
+        @include media("<1300px") {
+            font-size: 1.3rem;
+        }
 
-		&:not(:last-child) {
-			margin-bottom: 1rem;
-		}
-	}
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
 }
 
 .content {
-	position: relative;
+    position: relative;
 
-	p {
-		padding-right: 20rem;
-		margin-bottom: 2rem;
+    p {
+        padding-right: 20rem;
+        margin-bottom: 2rem;
 
-		@include media(">1300px", "<desktop") {
-			padding-right: 10rem;
-		}
+        @include media(">1300px", "<desktop") {
+            padding-right: 10rem;
+        }
 
-		@include media(">1000px", "<1300px") {
-			font-size: 1.5rem;
-			padding-right: 7rem;
-		}
+        @include media(">1000px", "<1300px") {
+            font-size: 1.5rem;
+            padding-right: 7rem;
+        }
 
-		@include media(">phone", "<1000px") {
-			padding-right: 4rem;
-			font-size: 1.4rem;
-		}
+        @include media(">phone", "<1000px") {
+            padding-right: 4rem;
+            font-size: 1.4rem;
+        }
 
-		@include media("<=phone") {
-			padding-right: 0;
-			font-size: 1.3rem;
-		}
-	}
+        @include media("<=phone") {
+            padding-right: 0;
+            font-size: 1.3rem;
+        }
+    }
 }

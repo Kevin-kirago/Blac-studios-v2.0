@@ -1,22 +1,14 @@
 import React from "react";
 import aboutMovie from "../assets/about_movie.mp4";
-import clientSprites from "../assets/clients/symbol-defs.svg";
 
 const AboutPage = () => {
-    const sprites = [
-        "#icon-bxl-visa",
-        "#icon-bxl-digg",
-        "#icon-bxl-dropbox",
-        "#icon-bxl-ebay",
-    ];
-
     return (
         <div className="about">
             <div className="about__content">
                 <section className="about__story">
                     <ul className="nav">
                         <li className="nav-item">
-                            <span>/ Who we are</span>
+                            <span>/ Who we are :</span>
                         </li>
                     </ul>
                     <div className="content">
@@ -25,30 +17,58 @@ const AboutPage = () => {
                             ANIMATION, VFX AND EMERGING TECHNOLOGIES.
                         </h1>
                         <p className="paragraph">
-                            <span>BlacBallStudios</span> was established in
-                            2016.
-                            <br /> Our goal is to please and exceed your needs
-                            and expectations, with our intense desire for
-                            knowledge and passion in &nbsp;
-                            <span>ANIMATION</span>, <span>VISUAL EFFECTS</span>{" "}
-                            and <span>DESIGN</span> for any media.
-                            <br /> We focus on going above and beyond creatively
-                            thanks to our teams diverse backgrounds, be it
-                            cinema, television or Advertisement. We are proud of
-                            our creativity and savviness in what we do. Our
-                            creativity works hand in hand with our devotion to
-                            build your project from start to finish,{" "}
-                            <span>on time</span> and{" "}
-                            <span>within the budget</span>.
+                            <span>BlacBall Studios,</span> we are a
+                            ground-breaking design studio based in Nairobi,
+                            Kenya specializing in{" "}
+                            <span>
+                                POST-PRODUCTION, ANIMATION, COLOR GRADING,
+                                VISUAL EFFECTS.
+                            </span>
                         </p>
                         <p className="paragraph">
-                            <span>BlacBallStudios</span> offers a broad range of
-                            3D Photorealistic <span>CGI</span> design and
-                            production services for creating the perfect
-                            illusion.
-                            <br /> The only limit is your imagination. Our team
-                            made up of a photographer, 3D-Artist, Modellers and
-                            Designers will turn your idea into a reality.
+                            Since our establishment in 2017, we have
+                            consistently surpassed expectations and brought
+                            dreams to life. Our diverse team, dedicated
+                            approach, and commitment to delivering projects on
+                            time and within budget set us apart in the industry.
+                        </p>
+                        <p className="paragraph">
+                            We are creative pioneers with backgrounds spanning
+                            Cinema, Television, and Advertising.
+                        </p>
+                        <p className="paragraph">
+                            Our team is passionate about going above and beyond
+                            creatively, merging our artistic vision with
+                            efficient project management. Offering a range of
+                            services including Photography, 3D art, Modeling,
+                            and Design. We specialize in 3D photorealistic CGI
+                            design and production.
+                        </p>
+                        <p className="paragraph">
+                            Our expertise lies in crafting illusions that defy
+                            reality, allowing us to push the boundaries of
+                            imagination.
+                        </p>
+                        <p className="paragraph">
+                            With unrivalled passion, creativity, and expertise,
+                            we bring your wildest dreams to life.
+                        </p>
+                        <p className="paragraph">
+                            Don't miss out on the magic - experience the
+                            extraordinary worlds we create at{" "}
+                            <span>BLACBALL STUDIOS.</span> We are committed to
+                            exceeding your expectations and delivering projects
+                            that leave a lasting impact
+                        </p>
+                        <p className="paragraph">
+                            <span className="centered_bold">
+                                Join us on this remarkable journey and allow us
+                                to bring your imaginations to life.
+                            </span>
+                        </p>
+
+                        <p className="paragraph paragraph__last">
+                            Just Imagine …
                         </p>
                     </div>
                 </section>
@@ -95,18 +115,7 @@ const AboutPage = () => {
                             give us opportunity to make content we love.
                         </p>
                     </div>
-                    <div className="logo">
-                        {sprites.map((item) => (
-                            <div
-                                className="logo__container"
-                                key={sprites.indexOf(item)}
-                            >
-                                <svg>
-                                    <use href={clientSprites + item} />
-                                </svg>
-                            </div>
-                        ))}
-                    </div>
+                    <div className="logo"></div>
                 </section>
             </div>
         </div>
