@@ -98,21 +98,23 @@ body {
     span {
         text-transform: uppercase;
         font-weight: 600;
-        color: $white;
+        // color: $white;
     }
 
     .centered_bold {
+        font-style: italic;
         display: flex;
+        text-transform: none;
         justify-content: center;
     }
 
     &__last {
+        font-style: italic;
         display: flex;
         justify-content: center;
         padding: 2rem 0;
-        text-transform: uppercase;
         font-weight: 600;
-        color: $white;
+        // color: $white;
     }
 }
 
