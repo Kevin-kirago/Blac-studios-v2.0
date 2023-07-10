@@ -107,31 +107,35 @@
 
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-row-gap: 2rem;
+            grid-gap: 2rem;
+
+            @include media("<laptop") {
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 1rem;
+            }
 
             @include media("<phone") {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 0.5rem;
             }
 
             &__container {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                height: 25rem;
+                padding: 2rem;
 
-                svg {
-                    display: inline-block;
-                    fill: #888;
-                    transition: all 0.4s ease-in-out;
-                    cursor: pointer;
+                @include media("<phone") {
+                    height: 10rem;
+                    padding: 1rem;
+                }
 
-                    @include media("<phone") {
-                        height: 6rem;
-                        width: 6rem;
-                    }
-
-                    &:hover {
-                        fill: #ffc300;
-                    }
+                img {
+                    position: relative;
+                    object-fit: contain;
+                    height: 100%;
+                    width: 100%;
                 }
             }
         }

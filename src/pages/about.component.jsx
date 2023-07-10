@@ -1,7 +1,25 @@
 import React from "react";
 import aboutMovie from "../assets/about_movie.mp4";
+import airtel from "../assets/clients/Airtel.png";
+import kcb from "../assets/clients/KCB.png";
+import mpesa from "../assets/clients/Mpesa.png";
+import mtn_grp from "../assets/clients/MTN_Group.png";
+import netflix from "../assets/clients/Netflix-Logo.png";
+import safaricom from "../assets/clients/Safaricom.png";
+import showmax from "../assets/clients/showmax.png";
+import visa from "../assets/clients/Visa.png";
 
 const AboutPage = () => {
+    const logoImg = [
+        airtel,
+        kcb,
+        mpesa,
+        mtn_grp,
+        netflix,
+        safaricom,
+        showmax,
+        visa,
+    ];
     return (
         <div className="about">
             <div className="about__content">
@@ -115,7 +133,16 @@ const AboutPage = () => {
                             give us opportunity to make content we love.
                         </p>
                     </div>
-                    <div className="logo"></div>
+                    <div className="logo">
+                        {logoImg.map((img) => (
+                            <div
+                                className="logo__container"
+                                key={logoImg.indexOf(img)}
+                            >
+                                <img src={img} alt="logo" />
+                            </div>
+                        ))}
+                    </div>
                 </section>
             </div>
         </div>
