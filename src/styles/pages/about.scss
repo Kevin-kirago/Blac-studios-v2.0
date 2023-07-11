@@ -106,29 +106,28 @@
             grid-column: 1 / -1;
 
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(8, 1fr);
             grid-gap: 2rem;
 
             @include media("<laptop") {
-                grid-template-columns: repeat(3, 1fr);
-                grid-gap: 1rem;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 2rem;
             }
 
             @include media("<phone") {
                 grid-template-columns: repeat(2, 1fr);
-                grid-gap: 0.5rem;
+                grid-gap: 1rem;
             }
 
             &__container {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 25rem;
                 padding: 2rem;
 
                 @include media("<phone") {
                     height: 10rem;
-                    padding: 1rem;
+                    padding: 3rem;
                 }
 
                 img {
@@ -136,6 +135,7 @@
                     object-fit: contain;
                     height: 100%;
                     width: 100%;
+                    filter: grayscale(100%);
                 }
             }
         }
