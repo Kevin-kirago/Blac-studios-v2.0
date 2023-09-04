@@ -4,7 +4,7 @@ import sprites from "../assets/sprite.svg";
 const Footer = () => {
     const linkData = [
         {
-            linkUrl: "https://vimeo.com/blacstudioske",
+            linkUrl: "https://vimeo.com/blacballstudios",
             title: "Vimeo",
             icon: "#icon-bxl-vimeo",
         },
@@ -15,7 +15,7 @@ const Footer = () => {
         },
         {
             linkUrl:
-                "https://www.instagram.com/blacstudioske/?utm_source=ig_profile_share&igshid=1p",
+                "https://www.instagram.com/blacballstudios/?igshid=MzRlODBiNWFlZA%3D%3D",
             title: "Instagram",
             icon: "#icon-bxl-instagram-alt",
         },
