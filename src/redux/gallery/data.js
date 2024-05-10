@@ -19,6 +19,19 @@ import pride_img2 from "../../assets/products/Pride_Lemon_Fresh_ClayRender.jpg";
 
 const GALLERY_DATA = [
     {
+        id: 30,
+        routeName: "work/second-family",
+        title: "Second Family Opening Sequence",
+        company: "BlacBallStudios",
+        thumbnail:
+            "https://i.vimeocdn.com/video/1849250307-955498432ce3d999ea5776ca65dc3cdb8dc6afb216a794d8258a3bb6025bf00d-d_640x360",
+        reel: "https://player.vimeo.com/video/944383044?h=25b04b2450",
+        gallery: [
+            "https://i.vimeocdn.com/video/1849250307-955498432ce3d999ea5776ca65dc3cdb8dc6afb216a794d8258a3bb6025bf00d-d_640x360",
+        ],
+        credits: null,
+    },
+    {
         id: 29,
         routeName: "work/lato-tvc",
         title: "LATO FORTIFIED MILK POWDER TVC",
